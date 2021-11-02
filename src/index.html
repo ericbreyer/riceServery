@@ -9,6 +9,7 @@
 </head>
 <body>
     <div id="serveryInfo">
+        <span>Filter Servery</span>
         <select v-model="serveyFilter">
             <option>All</option>
             <option>Baker-Kitchen</option>
@@ -16,21 +17,48 @@
             <option>West-Servery</option>
             <option>Seibel-Servery</option>
             <option>South-Servery</option>
-          </select>
+        </select>
+        <span>Filter Time</span>
         <select v-model="timeFilter">
             <option>All</option>
             <option>lunch</option>
             <option>dinner</option>
+        </select>
+        <span>Filter Days</span>
+        <select v-model="daysFilter">
+            <option>All</option>
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+            <option>Sunday</option>
           </select>
-        <ul>
-            <li v-for="item in text" 
-                v-if="(serveyFilter == JSON.parse(JSON.parse(item)).Servery || serveyFilter == 'All')
-                    &&(timeFilter == JSON.parse(JSON.parse(item)).Time || timeFilter == 'All' || JSON.parse(JSON.parse(item)).Time == 'N/A')"
-                v-bind:class="{ time: JSON.parse(JSON.parse(item)).DataType == 2,
-                                servery: JSON.parse(JSON.parse(item)).DataType == 3,
-                                day: JSON.parse(JSON.parse(item)).DataType == 1}">
-                                {{JSON.parse(JSON.parse(item)).Text.replaceAll("\"","")}}</li>
-        </ul>
+        <div v-bind:class="[(daysFilter == 'All') ? 'serveryFlex' : 'serveryFlexRow']">
+        <div class="servery" v-for="servery in text" v-if="(serveyFilter == JSON.parse(servery).Name || serveyFilter == 'All')">
+            {{JSON.parse(servery).Name.replaceAll("-"," ")}}
+            <div class="timeFlex">
+            <div class="time" v-for="time in JSON.parse(servery).MealTimeGroups" v-if="(timeFilter == time.Name || timeFilter == 'All')">
+                {{time.Name.replaceAll("\"","")}}
+                <div class="dayFlex">
+                <div class="day" v-for="day in time.MealDayGroups" v-if="(daysFilter == day.Name || daysFilter == 'All')">
+                    {{day.Name.replaceAll("\"","")}}
+                    <div class="closed" v-if="day.Meals == null">
+                        Servery Closed :(
+                    </div>
+                    <ul>
+                    <li class = "food" v-for="food in day.Meals">
+                        {{food.replaceAll("\"","")}}
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        
     </div>
 
 

@@ -11,28 +11,39 @@ import (
 	"time"
 )
 
-type ServeryDataType int64
+type DataBlockType int64
 
 const (
-	food ServeryDataType = iota
+	food DataBlockType = iota
 	day
 	mealTime
-	Servery
+	servery
 )
 
-type ServeryData struct {
-	DataType ServeryDataType
+type DataBlock struct {
+	DataType DataBlockType
 	Text     string
 	Position int
 	Servery  string
 	Time     string
 }
 
-func (data ServeryData) toJson() string {
-	b, _ := json.Marshal(data)
-	c := fmt.Sprintf("%q", b)
-	return c
+type serveryGroup struct {
+	Name           string
+	MealTimeGroups []mealTimeGroup
 }
+
+type mealTimeGroup struct {
+	Name          string
+	MealDayGroups []mealDayGroup
+}
+
+type mealDayGroup struct {
+	Name  string
+	Meals []meal
+}
+
+type meal string
 
 func getMatchesWithIndex(body []byte, myregex *regexp.Regexp) ([][]byte, [][]int) {
 	matched := myregex.FindAll(body, -1)
@@ -40,14 +51,14 @@ func getMatchesWithIndex(body []byte, myregex *regexp.Regexp) ([][]byte, [][]int
 	return matched, matchedIdx
 }
 
-func getServeryData(Servery string) []ServeryData {
+func getServeryData(Servery string) serveryGroup {
 
 	url := fmt.Sprintf("https://websvc-aws.rice.edu:8443/static-files/dining-assets/%s-Menu-Full-Week.js", Servery)
 
 	resp, _ := http.Get(url)
 	body, _ := io.ReadAll(resp.Body)
 
-	data := make([]ServeryData, 0)
+	rawData := make([]DataBlock, 0)
 
 	timeRegex, _ := regexp.Compile(`class=\\"meal-time meal-time-[^\\]*`)
 	timeMatched, timeMatchedIdx := getMatchesWithIndex(body, timeRegex)
@@ -60,8 +71,8 @@ func getServeryData(Servery string) []ServeryData {
 			dinnerPos = timeMatchedIdx[idx][0]
 		}
 
-		timeStr := fmt.Sprintf("%q", slice[28:])
-		data = append(data, ServeryData{
+		timeStr := fmt.Sprintf("%s", slice[28:])
+		rawData = append(rawData, DataBlock{
 			DataType: mealTime,
 			Text:     timeStr,
 			Position: timeMatchedIdx[idx][0],
@@ -80,9 +91,9 @@ func getServeryData(Servery string) []ServeryData {
 			mealTime = "dinner"
 		}
 
-		data = append(data, ServeryData{
+		rawData = append(rawData, DataBlock{
 			DataType: food,
-			Text:     fmt.Sprintf("%q", slice[21:]),
+			Text:     fmt.Sprintf("%s", slice[21:]),
 			Position: foodsMatchedIdx[idx][0],
 			Servery:  Servery,
 			Time:     mealTime})
@@ -99,39 +110,59 @@ func getServeryData(Servery string) []ServeryData {
 			mealTime = "dinner"
 		}
 
-		data = append(data, ServeryData{
+		rawData = append(rawData, DataBlock{
 			DataType: day,
-			Text:     fmt.Sprintf("%q", slice[35:len(slice)-1]),
+			Text:     fmt.Sprintf("%s", slice[35:len(slice)-1]),
 			Position: daysMatchedIdx[idx][0],
 			Servery:  Servery,
 			Time:     mealTime})
 	}
 
-	sort.Slice(data, func(i, j int) bool {
-		return data[i].Position < data[j].Position
+	sort.Slice(rawData, func(i, j int) bool {
+		return rawData[i].Position < rawData[j].Position
 	})
+
+	data := serveryGroup{Name: Servery}
+	var currentMealTimeBlock mealTimeGroup
+	var currentMealDayBlock mealDayGroup
+	for _, block := range rawData {
+		switch block.DataType {
+		case servery:
+			continue
+		case mealTime:
+			if currentMealTimeBlock.Name != "" {
+				currentMealTimeBlock.MealDayGroups = append(currentMealTimeBlock.MealDayGroups, currentMealDayBlock)
+				currentMealDayBlock = mealDayGroup{}
+				data.MealTimeGroups = append(data.MealTimeGroups, currentMealTimeBlock)
+			}
+			currentMealTimeBlock = mealTimeGroup{Name: block.Text}
+		case day:
+			if currentMealDayBlock.Name != "" {
+				currentMealTimeBlock.MealDayGroups = append(currentMealTimeBlock.MealDayGroups, currentMealDayBlock)
+			}
+			currentMealDayBlock = mealDayGroup{Name: block.Text}
+		case food:
+			currentMealDayBlock.Meals = append(currentMealDayBlock.Meals, meal(block.Text))
+		}
+	}
+	currentMealTimeBlock.MealDayGroups = append(currentMealTimeBlock.MealDayGroups, currentMealDayBlock)
+	data.MealTimeGroups = append(data.MealTimeGroups, currentMealTimeBlock)
+
+	dataJson, _ := json.MarshalIndent(data, "", "  ")
+	fmt.Printf("%s", dataJson)
 
 	return data
 }
 
-func getAllServeryData() []ServeryData {
+func getAllServeryData() []serveryGroup {
 	serveries := []string{"Baker-Kitchen", "North-Servery", "West-Servery", "South-Servery", "Seibel-Servery"}
 
-	data := make([]ServeryData, 0)
-	data = append(data, ServeryData{
-		DataType: food,
-		Text:     fmt.Sprintf("Last Fetched %s", time.Now()),
-		Position: 0,
-		Servery:  "N/A",
-		Time:     "N/A"})
+	data := make([]serveryGroup, 0)
+	//data = append(data, serveryGroup{
+	//	Name: fmt.Sprintf("Last Fetched %s", time.Now())})
+
 	for _, v := range serveries {
-		data = append(data, ServeryData{
-			DataType: Servery,
-			Text:     v,
-			Position: 0,
-			Servery:  v,
-			Time:     "N/A"})
-		data = append(data, getServeryData(v)...)
+		data = append(data, getServeryData(v))
 	}
 
 	return data
@@ -170,12 +201,13 @@ func main() {
 
 	http.HandleFunc("/data", func(w http.ResponseWriter, r *http.Request) {
 		jsonSlice := make([]string, 0)
-		for _, slice := range data {
-			jsonSlice = append(jsonSlice, slice.toJson())
+		for _, servery := range data {
+			serveryJson, _ := json.Marshal(servery)
+			jsonSlice = append(jsonSlice, fmt.Sprintf("%s", serveryJson))
 		}
 		w.Header().Set("Content-type", "application/json")
 		b, _ := json.Marshal(struct{ Jsons []string }{Jsons: jsonSlice})
-		fmt.Fprintf(w, "%q", b)
+		fmt.Fprintf(w, "%s", b)
 	})
 
 	log.Fatal(http.ListenAndServe(":8080", nil))

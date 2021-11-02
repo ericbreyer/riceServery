@@ -4,6 +4,7 @@ let appendChild = new Vue({
         text: [],
         serveyFilter: "All",
         timeFilter: "All",
+        daysFilter: "All"
     },
     methods: {
         changeText: function(text) {
@@ -18,7 +19,7 @@ let appendChild = new Vue({
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
 
-                text = JSON.parse(JSON.parse(this.response)).Jsons
+                text = JSON.parse(this.response).Jsons
             }
         };
         xhttp.open("GET", "/data", false);
