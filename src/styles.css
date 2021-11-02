@@ -1,0 +1,18 @@
+.time {
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+.servery {
+    font-size: xx-large;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.day {
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
