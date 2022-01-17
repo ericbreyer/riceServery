@@ -269,10 +269,10 @@ input[type="radio"] {
     background-color: var(--dark-blue-gray);
 }
 
-.sidebarButton:not(.open) {
+/*.sidebarButton:not(.open) {
     height: 2em;
     padding: 0;
-}
+}*/
 
 .sidebar {
     position: fixed;
@@ -330,9 +330,9 @@ input[type="radio"] {
     }
 
 
-    .sidebarButton:not(.open) {
+    /*.sidebarButton:not(.open) {
         height: 1.1em
-    }
+    }*/
 
     .mainBody {
         padding: 12rem 5ch 0 5ch;
