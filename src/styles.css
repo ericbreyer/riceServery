@@ -112,9 +112,13 @@ body {
     cursor: pointer;
 }
 
-.food:hover:not(.selected) {
-    background-color: hsl(216, 100%, 75%) !important;
+
+@media (hover:hover) {
+    .food:hover:not(.selected) {
+        background-color: hsl(216, 100%, 75%) !important;
+    }
 }
+
 
 .selected {
     background-color: blue !important;
@@ -321,11 +325,10 @@ input[type="radio"] {
         width: 100%;
         height: 1.1em;
         padding-bottom: 0;
-    }
-    
-    .sidebarButton:hover {
         background-color: var(--dark-blue-gray);
+
     }
+
 
     .sidebarButton:not(.open) {
         height: 1.1em
@@ -353,5 +356,4 @@ input[type="radio"] {
     .stickyMargin {
         top: 7rem;
     }
-
   }
