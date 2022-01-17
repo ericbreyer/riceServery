@@ -1,1 +1,1 @@
-web: riceServery
+web: bin/riceServery
