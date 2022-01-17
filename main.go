@@ -8,6 +8,7 @@ import (
 	"log"
 	"math"
 	"net/http"
+	"os"
 	"regexp"
 	"sort"
 	"strings"
@@ -259,7 +260,15 @@ func main() {
 		fmt.Fprintf(w, "All Good")
 	})
 
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	port := os.Getenv("PORT")
+
+	if port == "" {
+		fmt.Print("Server started on port 8080")
+		log.Fatal(http.ListenAndServe(":8080", nil))
+	} else {
+		fmt.Print("Server started on port " + port)
+		log.Fatal(http.ListenAndServe(":"+port, nil))
+	}
 	//log.Fatal(http.ListenAndServeTLS(":443", "./https/server.crt", "./https/server.key", nil))
 
 }
