@@ -11,7 +11,7 @@
     <div id="serveryInfo">
 
         <div class="topBar">
-            <div class="title">Owl Dining at a Glance</div>
+            <div class="title">Owl Dining</div>
             
             <button v-on:click="currentDate">Now</button>
             <button v-on:click="function(){ serveryFilter = []; timeFilter='All'; daysFilter='All'}">All Days</button>
@@ -22,7 +22,7 @@
 
         <div class="sidebar" v-bind:class="{inActive : !sidebarActive}">
             <div class="sidebarButton" v-bind:class="{open : sidebarActive}" v-on:click="function(){sidebarActive = !sidebarActive}">
-                <div class="transition" v-bind:class="{open : sidebarActive}"> > </div>
+                <div class="sidebarButtonText" v-bind:class="{open : sidebarActive}"> > </div>
             </div>
 
         <div class="optionsFlex">
