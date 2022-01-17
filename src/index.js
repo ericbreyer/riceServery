@@ -118,8 +118,21 @@ let appendChild = new Vue({
             var y = e.clientY;
 
             scrollOffset = -this.$refs.mainBody.getBoundingClientRect().y
+            width = document.body.clientWidth
 
-            this.$refs.popUp.style.marginLeft  = x+2+"px";
+            xpos = x+2
+
+            if (xpos +172 > width) {
+                xpos = width-172
+            }
+
+            console.log ({
+                "x":x,
+                "width":width,
+                "xpos":xpos
+            })
+
+            this.$refs.popUp.style.marginLeft  = xpos+"px";
             this.$refs.popUp.style.marginTop  =  (y+scrollOffset+2)+"px";
         },
 

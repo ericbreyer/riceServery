@@ -21,7 +21,7 @@
         </div>
 
         <div class="sidebar" v-bind:class="{inActive : !sidebarActive}">
-            <div class="sidebarButton" v-bind:class="{open : sidebarActive}" v-on:click="function(){sidebarActive = !sidebarActive}">
+            <div class="sidebarButton" v-bind:class="{open : sidebarActive}" v-on:click="function(){sidebarActive = !sidebarActive; hidePopUp();}">
                 <div class="sidebarButtonText" v-bind:class="{open : sidebarActive}"> > </div>
             </div>
 
