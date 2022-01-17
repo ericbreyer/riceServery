@@ -1,3 +1,87 @@
+:root {
+    --dark-blue-gray: hsl(203, 100%, 81%);
+    --blue-gray: hsl(204, 100%, 91%);
+    --my-blue: hsl(214, 100%, 61%);
+}
+
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
+    font-family: sans-serif;
+    transition: background-color .15s
+
+}
+
+.sidebar {
+    position: fixed;
+    top: 3rem;
+    bottom: 0;
+    left: 0;
+    padding: .5rem 2ch 0 2ch;
+    width: 16ch;
+    z-index: 1;
+    transition: .5s;
+    transform: translateX(0px);
+    background-color: var(--blue-gray);
+}
+
+.inActive {
+    transition: .5s;
+    transform: translateX(-16ch)
+}
+
+
+
+.popUp {
+    position: absolute;
+    background-color: gray;
+    z-index: 2;
+    width: 20ch;
+    padding: 5px;
+    border: 2px solid black;
+    display: none;
+    flex-direction: column;
+}
+
+.popUp > span {
+    display: flex;
+}
+
+.popUp button {
+    margin-left: auto;
+    background-color: lightslategray;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.popUp button:hover {
+    background-color: darkgrey;
+}
+
+.popUp button:active {
+
+}
+
+#stars {
+    font-size: .8em;
+    color: gold;
+}
+
+.mainBody {
+    padding: 0 5ch 0 20ch;
+    margin-top: 3rem;
+    transition: .5s;
+}
+
+.big {
+    padding: 0 5ch 0 5ch !important;
+    transition: .5s;
+}
+
 .servery {
     font-size: xx-large;
     font-weight: bolder;
@@ -11,19 +95,72 @@
     font-weight: bold;
     border: black 1px solid;
     width: 37ch;
-    height: 12em;
     border-collapse: collapse;
 
+    background-color: var(--dark-blue-gray);
+    box-shadow: 3px 3px 3px 0px black;
+    border-radius: 5px;
+
+    
+
 }
+
+.day > span:first-child {
+    background-color: var(--my-blue);
+    width: 100%;
+    padding: .2em 0 .2em 0;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 2px 2px 0px hsl(0deg 0% 0% / 75%);
+    z-index: 1;
+}
+
+.day > ul > li:last-child {
+    border-radius: 0px 0px 5px 5px;
+}
+
+
 .food {
     font-size: medium;
     font-weight: normal;
+    padding: .15em 0 .15em 0;
+    display: grid;
+    grid-template-columns: 1fr 7ch;
+    width: 100%;
+    padding-left: 2ch;
+    cursor: pointer;
+}
+
+.food:hover:not(.selected) {
+    background-color: hsl(216, 100%, 75%) !important;
+}
+
+.selected {
+    background-color: blue !important;
+    color: white;
+}
+
+.star {
+    font-size: .8em;
+    color: black;
+}
+
+.starHolder {
+    padding-left: 1ch;
+}
+
+.food:nth-child(2n) {
+    background-color: var(--blue-gray);
+}
+.food:nth-child(2n+1) {
+    background-color: var(--dark-blue-gray);
 }
 
 ul {
-    /*list-style: none;*/
-    margin-left:2ch;
-    padding-left:.5ch;
+    list-style: none;
+    padding-left:0ch;
+    margin:0;
 }
 
 .serveryFlex {
@@ -61,4 +198,100 @@ ul {
     line-height: 9em;
     color: red;
     text-align: center;
+    z-index: 1;
+}
+
+.optionsFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.sticky {
+    position: sticky;
+    top: 3rem;
+    background-color: white;
+    z-index: 3;
+    text-align: center;
+}
+
+.stickyMargin {
+    background-color: white;
+    position: sticky;
+    top: 5rem;
+    z-index: 2;
+    text-align: center;
+}
+
+.sidebarButton {
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    left: 10.6ch;
+    top: 0;
+    height: 100vh;
+    background-color: var(--blue-gray);
+    width: 2ch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10rem;
+    box-shadow: 2px 2px 2px 0px hsl(0deg 0% 0% / 56%);
+    transition: .5s;
+}
+
+.sidebarButton:hover {
+    background-color: var(--dark-blue-gray);
+}
+
+.sidebarButton:not(.open) {
+    height: 2em;
+    padding: 0;
+}
+
+.transition {
+    transition: .5s;
+}
+
+.transition.open {
+    transition: .5s;
+    transform: rotateZ(-180deg);
+}
+
+.topBar {
+    background-color: var(--blue-gray);
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+
+    display: flex;
+
+    box-shadow: 0 0 5px 0 black;
+}
+
+.topBar button:first-of-type {
+    margin-left: auto;
+}
+
+.topBar button{
+}
+
+.topBar button:last-of-type {
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.title {
+    margin-left: 2ch;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    line-height: 3rem;
 }

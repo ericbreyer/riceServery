@@ -9,22 +9,47 @@
 </head>
 <body>
     <div id="serveryInfo">
-        <span>Filter Servery</span>
-        <select v-model="serveyFilter">
-            <option>All</option>
-            <option>Baker-Kitchen</option>
-            <option>North-Servery</option>
-            <option>West-Servery</option>
-            <option>Seibel-Servery</option>
-            <option>South-Servery</option>
-        </select>
-        <span>Filter Time</span>
+
+        <div class="topBar">
+            <div class="title">Owl Dining at a Glance</div>
+            
+            <button v-on:click="currentDate">Now</button>
+            <button v-on:click="function(){ serveryFilter = []; timeFilter='All'; daysFilter='All'}">All Days</button>
+        
+            <button class="about">About</button>
+            
+        </div>
+
+        <div class="sidebar" v-bind:class="{inActive : !sidebarActive}">
+            <div class="sidebarButton" v-bind:class="{open : sidebarActive}" v-on:click="function(){sidebarActive = !sidebarActive}">
+                <div class="transition" v-bind:class="{open : sidebarActive}"> > </div>
+            </div>
+
+        <div class="optionsFlex">
+        <div>
+        <div>Filter Servery</div>
+        <div><input type="checkbox" id="Baker-Kitchen" value="Baker-Kitchen" v-model="serveryFilter">
+        <label for="Baker-Kitchen">Baker</label></div>
+        <div><input type="checkbox" id="North-Servery" value="North-Servery" v-model="serveryFilter">
+        <label for="North-Servery">North</label></div>
+        <div><input type="checkbox" id="West-Servery" value="West-Servery" v-model="serveryFilter">
+        <label for="West-Servery">West</label></div>
+        <div><input type="checkbox" id="Seibel-Servery" value="Seibel-Servery" v-model="serveryFilter">
+        <label for="Seibel-Servery">Seibel</label></div>
+        <div><input type="checkbox" id="South-Servery" value="South-Servery" v-model="serveryFilter">
+        <label for="South-Servery">South</label></div>
+        </div>
+
+        <div>
+        <div>Filter Time</div>
         <select v-model="timeFilter">
             <option>All</option>
             <option>lunch</option>
             <option>dinner</option>
         </select>
-        <span>Filter Days</span>
+        </div>
+        <div>
+        <div>Filter Days</div>
         <select v-model="daysFilter">
             <option>All</option>
             <option>Monday</option>
@@ -35,21 +60,56 @@
             <option>Saturday</option>
             <option>Sunday</option>
           </select>
+        </div>
+        <button v-on:click="currentDate">Go to today</button>
+        <button v-on:click="function(){ serveryFilter = []; timeFilter='All'; daysFilter='All'}">Clear Filters</button>
+        
+        </div>
+        </div>
+
+        <div class="popUp" ref="popUp">
+        <span>Rate {{toRate}}</span>
+        <span>
+        <span id="stars">
+            <input type="radio" id="one" value="1" v-model="rating">
+            <label for="one" v-if="rating < 1">☆</label>
+            <label for="one" v-if="rating >= 1">★</label>
+            <input type="radio" id="two" value="2" v-model="rating">
+            <label for="two" v-if="rating < 2">☆</label>
+            <label for="two" v-if="rating >= 2">★</label>
+            <input type="radio" id="three" value="3" v-model="rating">
+            <label for="three" v-if="rating < 3">☆</label>
+            <label for="three" v-if="rating >= 3">★</label>
+            <input type="radio" id="four" value="4" v-model="rating">
+            <label for="four" v-if="rating < 4">☆</label>
+            <label for="four" v-if="rating >= 4">★</label>
+        </span>
+        <button v-on:click="sendRating">Rate</button>
+        </span>
+        </div>
+
+        <div class="mainBody" ref="mainBody" v-bind:class="{big : !sidebarActive}">
+        
         <div v-bind:class="[(daysFilter == 'All') ? 'serveryFlex' : 'serveryFlexRow']">
-        <div class="servery" v-for="servery in text" v-if="(serveyFilter == JSON.parse(servery).Name || serveyFilter == 'All')">
-            {{JSON.parse(servery).Name.replaceAll("-"," ")}}
+        <!--<div class="servery" v-for="servery in text" v-if="(serveyFilter == JSON.parse(servery).Name || serveyFilter == 'All')">-->
+        <div class="servery" v-for="servery in text" v-if="serveryFilter.includes(JSON.parse(servery).Name) || serveryFilter.length == 0">
+            <span class="sticky">{{JSON.parse(servery).Name.replaceAll("-"," ")}}</span>
             <div class="timeFlex">
             <div class="time" v-for="time in JSON.parse(servery).MealTimeGroups" v-if="(timeFilter == time.Name || timeFilter == 'All')">
-                {{time.Name.replaceAll("\"","")}}
+                
+                <span class="stickyMargin" v-if="timeFilter == 'All'">{{time.Name}}</span>
+                
                 <div class="dayFlex">
                 <div class="day" v-for="day in time.MealDayGroups" v-if="(daysFilter == day.Name || daysFilter == 'All')">
-                    {{day.Name.replaceAll("\"","")}}
+                    <span>{{JSON.parse(servery).Name.replaceAll("-"," ")}} {{day.Name}} {{time.Name}}</span>
                     <div class="closed" v-if="day.Meals == null">
                         Servery Closed :(
                     </div>
                     <ul>
-                    <li class = "food" v-for="food in day.Meals">
-                        {{food.replaceAll("\"","")}}
+                    <li class = "food" v-for="food in day.Meals" v-bind:class="{selected :  food.Name == toRate}"
+                                        v-on:click="function(e) {if(toRate == food.Name){toRate = ''; hidePopUp();}else{toRate = food.Name; movePopUp(e);}}">
+                        <span>{{food.Name}}</span>
+                        <span class="starHolder"><span class="star" v-for="star in food.Rating">★</span></span>
                     </li>
                     </ul>
                 </div>
@@ -59,6 +119,7 @@
         </div>
         </div>
         
+    </div>
     </div>
 
 

@@ -4,10 +4,13 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"io/ioutil"
 	"log"
+	"math"
 	"net/http"
 	"regexp"
 	"sort"
+	"strings"
 	"time"
 )
 
@@ -24,8 +27,6 @@ type DataBlock struct {
 	DataType DataBlockType
 	Text     string
 	Position int
-	Servery  string
-	Time     string
 }
 
 type serveryGroup struct {
@@ -39,11 +40,30 @@ type mealTimeGroup struct {
 }
 
 type mealDayGroup struct {
-	Name  string
-	Meals []meal
+	Name   string
+	Meals  []meal
+	Id     string
+	Rating int
 }
 
-type meal string
+type meal struct {
+	Name   string
+	Rating int
+}
+
+type averageRating struct {
+	AverageRating   float32
+	totalRating     int
+	numberOfRatings int64
+}
+
+func (s *averageRating) addRating(rating int) {
+	s.numberOfRatings++
+	s.totalRating += rating
+	s.AverageRating = float32(s.totalRating) / float32(s.numberOfRatings)
+}
+
+var idToRating map[string]averageRating
 
 func getMatchesWithIndex(body []byte, myregex *regexp.Regexp) ([][]byte, [][]int) {
 	matched := myregex.FindAll(body, -1)
@@ -51,71 +71,60 @@ func getMatchesWithIndex(body []byte, myregex *regexp.Regexp) ([][]byte, [][]int
 	return matched, matchedIdx
 }
 
-func getServeryData(Servery string) serveryGroup {
+func getServeryData(Servery string) (serveryGroup, error) {
 
 	url := fmt.Sprintf("https://websvc-aws.rice.edu:8443/static-files/dining-assets/%s-Menu-Full-Week.js", Servery)
 
-	resp, _ := http.Get(url)
-	body, _ := io.ReadAll(resp.Body)
+	resp, err := http.Get(url)
+
+	if err != nil {
+		fmt.Printf("%v", err)
+		return serveryGroup{}, err
+	}
+
+	defer resp.Body.Close()
+
+	body, err := io.ReadAll(resp.Body)
+
+	if err != nil {
+		fmt.Printf("%v", err)
+		return serveryGroup{}, err
+	}
 
 	rawData := make([]DataBlock, 0)
 
 	timeRegex, _ := regexp.Compile(`class=\\"meal-time meal-time-[^\\]*`)
 	timeMatched, timeMatchedIdx := getMatchesWithIndex(body, timeRegex)
 
-	dinnerPos := 0
-
 	for idx, slice := range timeMatched {
-
-		if fmt.Sprintf("%q", slice[28:]) == "\"dinner\"" {
-			dinnerPos = timeMatchedIdx[idx][0]
-		}
 
 		timeStr := fmt.Sprintf("%s", slice[28:])
 		rawData = append(rawData, DataBlock{
 			DataType: mealTime,
 			Text:     timeStr,
-			Position: timeMatchedIdx[idx][0],
-			Servery:  Servery,
-			Time:     timeStr[1 : len(timeStr)-1]})
+			Position: timeMatchedIdx[idx][0]})
 	}
 
 	foodsRegex, _ := regexp.Compile(`class=\\"mitem\\"\\u003E[^\\]*`)
 	foodsMatched, foodsMatchedIdx := getMatchesWithIndex(body, foodsRegex)
 
 	for idx, slice := range foodsMatched {
-		var mealTime string
-		if foodsMatchedIdx[idx][0] < dinnerPos {
-			mealTime = "lunch"
-		} else {
-			mealTime = "dinner"
-		}
 
 		rawData = append(rawData, DataBlock{
 			DataType: food,
-			Text:     fmt.Sprintf("%s", slice[21:]),
-			Position: foodsMatchedIdx[idx][0],
-			Servery:  Servery,
-			Time:     mealTime})
+			Text:     strings.TrimSpace(fmt.Sprintf("%s", slice[21:])),
+			Position: foodsMatchedIdx[idx][0]})
 	}
 
 	daysRegex, _ := regexp.Compile(`style=\\"background:#212d64;\\"\\u003E[^\\]*`)
 	daysMatched, daysMatchedIdx := getMatchesWithIndex(body, daysRegex)
 
 	for idx, slice := range daysMatched {
-		var mealTime string
-		if daysMatchedIdx[idx][0] < dinnerPos {
-			mealTime = "lunch"
-		} else {
-			mealTime = "dinner"
-		}
 
 		rawData = append(rawData, DataBlock{
 			DataType: day,
 			Text:     fmt.Sprintf("%s", slice[35:len(slice)-1]),
-			Position: daysMatchedIdx[idx][0],
-			Servery:  Servery,
-			Time:     mealTime})
+			Position: daysMatchedIdx[idx][0]})
 	}
 
 	sort.Slice(rawData, func(i, j int) bool {
@@ -140,21 +149,34 @@ func getServeryData(Servery string) serveryGroup {
 			if currentMealDayBlock.Name != "" {
 				currentMealTimeBlock.MealDayGroups = append(currentMealTimeBlock.MealDayGroups, currentMealDayBlock)
 			}
-			currentMealDayBlock = mealDayGroup{Name: block.Text}
+
+			year, week := time.Now().ISOWeek()
+			currentMealDayBlock = mealDayGroup{Name: block.Text, Id: fmt.Sprintf("%d%s%d/%d", block.Position, Servery, week, year)}
 		case food:
-			currentMealDayBlock.Meals = append(currentMealDayBlock.Meals, meal(block.Text))
+			rating := 0
+
+			if val, ok := idToRating[block.Text]; ok {
+				rating = int(math.Round(float64(val.AverageRating)))
+			}
+
+			if block.Text != "CLOSED" && block.Text != "Closed" {
+				currentMealDayBlock.Meals = append(currentMealDayBlock.Meals, meal{Name: block.Text, Rating: rating})
+			}
+
 		}
 	}
 	currentMealTimeBlock.MealDayGroups = append(currentMealTimeBlock.MealDayGroups, currentMealDayBlock)
 	data.MealTimeGroups = append(data.MealTimeGroups, currentMealTimeBlock)
 
-	dataJson, _ := json.MarshalIndent(data, "", "  ")
-	fmt.Printf("%s", dataJson)
+	//dataJson, _ := json.MarshalIndent(data, "", "  ")
+	//fmt.Printf("%s", dataJson)
 
-	return data
+	return data, nil
 }
 
 func getAllServeryData() []serveryGroup {
+	fmt.Print("Tick! ", time.Now(), "\n")
+
 	serveries := []string{"Baker-Kitchen", "North-Servery", "West-Servery", "South-Servery", "Seibel-Servery"}
 
 	data := make([]serveryGroup, 0)
@@ -162,7 +184,12 @@ func getAllServeryData() []serveryGroup {
 	//	Name: fmt.Sprintf("Last Fetched %s", time.Now())})
 
 	for _, v := range serveries {
-		data = append(data, getServeryData(v))
+		serveryData, err := getServeryData(v)
+		for err != nil {
+			println("\n----\nahh\n----\n", err)
+			serveryData, err = getServeryData(v)
+		}
+		data = append(data, serveryData)
 	}
 
 	return data
@@ -170,12 +197,14 @@ func getAllServeryData() []serveryGroup {
 
 func main() {
 
+	idToRating = make(map[string]averageRating)
+
 	data := getAllServeryData()
 
 	go func() {
+
 		c := time.Tick(time.Minute)
-		for next := range c {
-			fmt.Print("Tick", next)
+		for range c {
 			data = getAllServeryData()
 		}
 	}()
@@ -208,6 +237,26 @@ func main() {
 		w.Header().Set("Content-type", "application/json")
 		b, _ := json.Marshal(struct{ Jsons []string }{Jsons: jsonSlice})
 		fmt.Fprintf(w, "%s", b)
+	})
+
+	http.HandleFunc("/updateRating", func(w http.ResponseWriter, r *http.Request) {
+		body, _ := ioutil.ReadAll(r.Body)
+		structure := &meal{}
+		_ = json.Unmarshal(body, structure)
+
+		if val, ok := idToRating[(*structure).Name]; ok {
+			val.addRating((*structure).Rating)
+			idToRating[(*structure).Name] = val
+		} else {
+			rating := averageRating{}
+			rating.addRating((*structure).Rating)
+			idToRating[(*structure).Name] = rating
+		}
+
+		fmt.Print("Update ", (*structure).Name, " ")
+		data = getAllServeryData()
+
+		fmt.Fprintf(w, "All Good")
 	})
 
 	log.Fatal(http.ListenAndServe(":8080", nil))
