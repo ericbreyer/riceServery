@@ -8,6 +8,10 @@
     <title>Better Servery</title>
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src = "./index.js" type="text/javascript" defer></script>
+  
+
     <div id="serveryInfo">
 
         <div class="topBar">
@@ -89,6 +93,7 @@
         </span>
         </div>
 
+        <div id="loading" v-if="loading"></div>
         <div class="mainBody" ref="mainBody" v-bind:class="{big : !sidebarActive}">
         
         <div v-bind:class="[(daysFilter == 'All') ? 'serveryFlex' : 'serveryFlexRow']">
@@ -123,9 +128,5 @@
     </div>
     </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src = "./index.js" type="text/javascript"></script>
-  
 </body>
 </html>

@@ -357,3 +357,13 @@ input[type="radio"] {
         top: 7rem;
     }
   }
+
+  #loading {
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    top: 3.2rem;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }

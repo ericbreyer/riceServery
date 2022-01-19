@@ -8,7 +8,8 @@ let appendChild = new Vue({
         daysFilter: "All",
         toRate: "",
         rating: "2",
-        sidebarActive: true
+        sidebarActive: true,
+        loading: true,
     },
     methods: {
         currentDate: function() {
@@ -138,14 +139,14 @@ let appendChild = new Vue({
 
         hidePopUp: function() {
             this.$refs.popUp.style.display = "none"
-        }
-
+        },
 
 
     },
     created: function() {
         this.fetchData()
         setInterval(this.fetchData, 60 * 1000)
+        this.loading = false
     }
 })
 
