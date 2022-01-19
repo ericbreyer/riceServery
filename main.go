@@ -259,9 +259,6 @@ func main() {
 
 		fmt.Fprintf(w, "All Good")
 	})
-	http.HandleFunc("/favicon.ico", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "./src/assets/crab.ico")
-	})
 
 	port := os.Getenv("PORT")
 
