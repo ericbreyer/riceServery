@@ -7,7 +7,7 @@ let appendChild = new Vue({
         timeFilter: "All",
         daysFilter: "All",
         toRate: "",
-        rating: "2",
+        rating: "0",
         sidebarActive: true,
         loading: true,
     },
@@ -37,7 +37,7 @@ let appendChild = new Vue({
                     this.daysFilter = "Saturday"
                     break
             }
-            if (today.getHours() > 14) {
+            if (today.getHours() >= 14) {
                 this.timeFilter = "dinner"
             }
             else {
@@ -82,6 +82,12 @@ let appendChild = new Vue({
             this.changeText(text)
         },
         sendRating: function() {
+
+            if(this.rating == "0") {
+                alert("Invalid Rating")
+                return
+            }
+
             var xhttp = new XMLHttpRequest();
 
             fetchData = this.fetchData
@@ -99,6 +105,8 @@ let appendChild = new Vue({
 
             this.toRate = ""
             this.hidePopUp();
+
+            this.rating = "0"
         },
 
         rateFood: function(servery, time, day, food, e) {
@@ -147,6 +155,7 @@ let appendChild = new Vue({
         this.fetchData()
         setInterval(this.fetchData, 60 * 1000)
         this.loading = false
+        this.currentDate()
     }
 })
 
