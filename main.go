@@ -12,6 +12,7 @@ import (
 	"regexp"
 	"sort"
 	"strings"
+	"sync"
 	"time"
 )
 
@@ -176,24 +177,63 @@ func getServeryData(Servery string) (serveryGroup, error) {
 }
 
 func getAllServeryData() []serveryGroup {
-	fmt.Print("Tick! ", time.Now(), "\n")
+	fmt.Print("Data Update Tick! at: ", time.Now(), "\n")
 
 	serveries := []string{"Baker-Kitchen", "North-Servery", "West-Servery", "South-Servery", "Seibel-Servery"}
 
 	data := make([]serveryGroup, 0)
-	//data = append(data, serveryGroup{
-	//	Name: fmt.Sprintf("Last Fetched %s", time.Now())})
 
-	for _, v := range serveries {
-		serveryData, err := getServeryData(v)
-		for err != nil {
-			println("\n----\nahh\n----\n", err)
-			serveryData, err = getServeryData(v)
-		}
-		data = append(data, serveryData)
+	w := sync.WaitGroup{}
+	w.Add(len(serveries))
+	for _, servery := range serveries {
+		//concurrency is about twice as fast and its cool!
+		go func(v string) {
+			serveryData, err := getServeryData(v)
+			for err != nil {
+				println("\n----\nahh\n----\n", err)
+				serveryData, err = getServeryData(v)
+			}
+			data = append(data, serveryData)
+			w.Done()
+		}(servery)
 	}
 
+	w.Wait()
 	return data
+}
+
+func getDateString() (day string) {
+	i, j, k := time.Now().Date()
+	day = fmt.Sprintf("%d%s%d", i, j.String(), k)
+	return
+}
+
+func addToJSON() {
+	temp, _ := os.ReadFile("./db.json")
+	myjson := struct {
+		Data []struct {
+			Date      string
+			Serveries []serveryGroup
+		}
+	}{}
+	json.Unmarshal(temp, &myjson)
+
+	day := getDateString()
+
+	myjsoncopy := myjson
+	for i, obj := range myjson.Data {
+		if obj.Date == day {
+			myjsoncopy.Data = append(myjson.Data[:i], myjson.Data[i+1:]...)
+		}
+	}
+	myjson = myjsoncopy
+
+	myjson.Data = append(myjson.Data, struct {
+		Date      string
+		Serveries []serveryGroup
+	}{day, getAllServeryData()})
+	myJsonString, _ := json.MarshalIndent(myjson, "", "  ")
+	os.WriteFile("./db.json", myJsonString, 0666)
 }
 
 func main() {
@@ -201,35 +241,24 @@ func main() {
 	idToRating = make(map[string]averageRating)
 
 	data := getAllServeryData()
+	addToJSON()
 
+	//update data every minute concurrently!
 	go func() {
-
 		c := time.Tick(time.Minute)
 		for range c {
 			data = getAllServeryData()
+			addToJSON()
 		}
 	}()
-
-	/*for _, slice := range data {
-		//fmt.Printf("Type: %d\n", slice.DataType)
-		//fmt.Printf("Text: %s\n", slice.Text)
-		//fmt.Printf("Position: %d\n", slice.Position)
-		switch slice.DataType {
-		case day:
-			fmt.Printf("\n---%s---\n", slice.Text)
-		case time:
-			fmt.Printf("\n\n---------------------\n-------%s-------\n---------------------\n", slice.Text)
-		case food:
-			fmt.Printf("%s\n", slice.Text)
-		case Servery:
-			fmt.Printf("\n\n%s\n\n\n", slice.Text)
-		}
-	}*/
 
 	fileServer := http.FileServer(http.Dir("./src"))
 	http.Handle("/", fileServer)
 
 	http.HandleFunc("/data", func(w http.ResponseWriter, r *http.Request) {
+		if r.Method != "GET" {
+			return
+		}
 		jsonSlice := make([]string, 0)
 		for _, servery := range data {
 			serveryJson, _ := json.Marshal(servery)
@@ -241,20 +270,24 @@ func main() {
 	})
 
 	http.HandleFunc("/updateRating", func(w http.ResponseWriter, r *http.Request) {
-		body, _ := ioutil.ReadAll(r.Body)
-		structure := &meal{}
-		_ = json.Unmarshal(body, structure)
-
-		if val, ok := idToRating[(*structure).Name]; ok {
-			val.addRating((*structure).Rating)
-			idToRating[(*structure).Name] = val
-		} else {
-			rating := averageRating{}
-			rating.addRating((*structure).Rating)
-			idToRating[(*structure).Name] = rating
+		if r.Method != "POST" {
+			return
 		}
 
-		fmt.Print("Update ", (*structure).Name, " ")
+		body, _ := ioutil.ReadAll(r.Body)
+		mealToUpdate := &meal{}
+		_ = json.Unmarshal(body, mealToUpdate)
+
+		if val, ok := idToRating[(*mealToUpdate).Name]; ok {
+			val.addRating((*mealToUpdate).Rating)
+			idToRating[(*mealToUpdate).Name] = val
+		} else {
+			rating := averageRating{}
+			rating.addRating((*mealToUpdate).Rating)
+			idToRating[(*mealToUpdate).Name] = rating
+		}
+
+		fmt.Print("Update ", (*mealToUpdate).Name, " ")
 		data = getAllServeryData()
 
 		fmt.Fprintf(w, "All Good")
@@ -269,6 +302,4 @@ func main() {
 		fmt.Print("Server started on port " + port)
 		log.Fatal(http.ListenAndServe(":"+port, nil))
 	}
-	//log.Fatal(http.ListenAndServeTLS(":443", "./https/server.crt", "./https/server.key", nil))
-
 }

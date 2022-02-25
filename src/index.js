@@ -109,18 +109,6 @@ let appendChild = new Vue({
             this.rating = "0"
         },
 
-        rateFood: function(servery, time, day, food, e) {
-            foodObj = JSON.parse(this.text[servery]).MealTimeGroups[time].MealDayGroups[day].Meals[food]
-            console.log(foodObj)
-            console.log(e.target.value)
-            Vue.set(foodObj, "Name", foodObj.Name + "a")
-            foodObj.Name = "aboicb"
-            foodObj = JSON.parse(this.text[servery]).MealTimeGroups[time].MealDayGroups[day].Meals[food]
-            console.log(foodObj)
-            this.hidePopUp()
-            
-        },
-
         movePopUp: function(e) {
             this.$refs.popUp.style.display = "flex"
             var x = e.clientX; 
@@ -158,18 +146,3 @@ let appendChild = new Vue({
         this.currentDate()
     }
 })
-
-/*    const status = node.isOnline() ? 'online' : 'offline'
-    
-    console.log(`Node status: ${status}`)
-    document.getElementById('status').innerHTML = `<object data="logo.svg" type="image/svg+xml" style="height: 100px;">
-    </object> Node status: ${status}`
-    var link = document.querySelector("link[rel~='icon']");
-      if (!link) {
-          link = document.createElement('link');
-          link.rel = 'icon';
-          document.getElementsByTagName('head')[0].appendChild(link);
-      }
-      link.href = 'logo.svg';
-} */
-  
