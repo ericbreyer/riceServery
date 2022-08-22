@@ -179,7 +179,7 @@ func getServeryData(Servery string) (serveryGroup, error) {
 func getAllServeryData() []serveryGroup {
 	fmt.Print("Data Update Tick! at: ", time.Now(), "\n")
 
-	serveries := []string{"Baker-Kitchen", "North-Servery", "West-Servery", "South-Servery", "Seibel-Servery"}
+	serveries := []string{"baker-kitchen", "north-servery", "west-servery", "south-servery", "seibel-servery"}
 
 	data := make([]serveryGroup, 0)
 
