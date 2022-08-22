@@ -75,8 +75,8 @@ func getMatchesWithIndex(body []byte, myregex *regexp.Regexp) ([][]byte, [][]int
 
 func getServeryData(Servery string) (serveryGroup, error) {
 
-	url := fmt.Sprintf("https://websvc-aws.rice.edu:8443/static-files/dining-assets/%s-Menu-Full-Week.js", Servery)
-
+	//url := fmt.Sprintf("https://websvc-aws.rice.edu:8443/static-files/dining-assets/%s-Menu-Full-Week.js", Servery)
+	url := fmt.Sprintf("https://web-api3.rice.edu/static/%s-menu-new.js", Servery)
 	resp, err := http.Get(url)
 
 	if err != nil {
