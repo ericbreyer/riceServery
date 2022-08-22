@@ -76,7 +76,7 @@ func getMatchesWithIndex(body []byte, myregex *regexp.Regexp) ([][]byte, [][]int
 func getServeryData(Servery string) (serveryGroup, error) {
 
 	//url := fmt.Sprintf("https://websvc-aws.rice.edu:8443/static-files/dining-assets/%s-Menu-Full-Week.js", Servery)
-	url := fmt.Sprintf("https://web-api3.rice.edu/static/%s-menu-new.js", Servery)
+	url := fmt.Sprintf("https://web-api3.rice.edu/static/%s-menu-full-week-new.js", Servery)
 	resp, err := http.Get(url)
 
 	if err != nil {
@@ -95,19 +95,25 @@ func getServeryData(Servery string) (serveryGroup, error) {
 
 	rawData := make([]DataBlock, 0)
 
-	timeRegex, _ := regexp.Compile(`class=\\"meal-time meal-time-[^\\]*`)
+	timeRegex, _ := regexp.Compile(`<span class=\\"meal-time[^>]*>[^<]*`)
 	timeMatched, timeMatchedIdx := getMatchesWithIndex(body, timeRegex)
 
 	for idx, slice := range timeMatched {
 
-		timeStr := fmt.Sprintf("%s", slice[28:])
+		temp, _ := regexp.Compile(`Lunch|Dinner`)
+		matched := temp.Find(slice)
+		if matched == nil {
+			fmt.Printf("%s", slice)
+			continue
+		}
+
 		rawData = append(rawData, DataBlock{
 			DataType: mealTime,
-			Text:     timeStr,
+			Text:     string(matched),
 			Position: timeMatchedIdx[idx][0]})
 	}
 
-	foodsRegex, _ := regexp.Compile(`class=\\"mitem\\"\\u003E[^\\]*`)
+	foodsRegex, _ := regexp.Compile(`<div class=\\"mitem\\">[^<]*`)
 	foodsMatched, foodsMatchedIdx := getMatchesWithIndex(body, foodsRegex)
 
 	for idx, slice := range foodsMatched {
@@ -118,15 +124,22 @@ func getServeryData(Servery string) (serveryGroup, error) {
 			Position: foodsMatchedIdx[idx][0]})
 	}
 
-	daysRegex, _ := regexp.Compile(`style=\\"background:#212d64;\\"\\u003E[^\\]*`)
-	daysMatched, daysMatchedIdx := getMatchesWithIndex(body, daysRegex)
+	dayTimeRegex, _ := regexp.Compile(`background:#212d64;\\">[^<]*`)
+	dayTimeMatched, dayTimeMatchedIdx := getMatchesWithIndex(body, dayTimeRegex)
 
-	for idx, slice := range daysMatched {
+	for idx, slice := range dayTimeMatched {
+
+		temp, _ := regexp.Compile(`Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday`)
+		matched := temp.Find(slice)
+		if matched == nil {
+			fmt.Printf("%s", slice)
+			continue
+		}
 
 		rawData = append(rawData, DataBlock{
 			DataType: day,
-			Text:     fmt.Sprintf("%s", slice[35:len(slice)-1]),
-			Position: daysMatchedIdx[idx][0]})
+			Text:     fmt.Sprintf("%s", matched),
+			Position: dayTimeMatchedIdx[idx][0]})
 	}
 
 	sort.Slice(rawData, func(i, j int) bool {
@@ -267,6 +280,7 @@ func main() {
 		w.Header().Set("Content-type", "application/json")
 		b, _ := json.Marshal(struct{ Jsons []string }{Jsons: jsonSlice})
 		fmt.Fprintf(w, "%s", b)
+		//fmt.Printf("%s", b)
 	})
 
 	http.HandleFunc("/updateRating", func(w http.ResponseWriter, r *http.Request) {

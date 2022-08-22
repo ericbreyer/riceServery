@@ -38,10 +38,10 @@ let appendChild = new Vue({
                     break
             }
             if (today.getHours() >= 14) {
-                this.timeFilter = "dinner"
+                this.timeFilter = "Dinner"
             }
             else {
-                this.timeFilter = "lunch"
+                this.timeFilter = "Lunch"
             }
         },
         changeText: function(text) {
@@ -49,6 +49,7 @@ let appendChild = new Vue({
             this.text = text
             this.allFoods = []
             text.forEach(e1 => {
+                console.info(JSON.parse(e1))
                 JSON.parse(e1).MealTimeGroups.forEach(e2 => {
                     e2.MealDayGroups.forEach(e3 => {
                         if(e3.Meals == null) {
@@ -65,7 +66,7 @@ let appendChild = new Vue({
                     })
                 })
             });
-            //console.log(this.text)
+            //console.dir(this.text)
         },
 
         fetchData: function() {

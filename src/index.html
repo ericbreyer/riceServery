@@ -35,24 +35,24 @@
         <div class="optionsFlex">
         <div>
         <div>Filter Servery</div>
-        <div><input type="checkbox" id="Baker-Kitchen" value="Baker-Kitchen" v-model="serveryFilter">
-        <label for="Baker-Kitchen">Baker</label></div>
-        <div><input type="checkbox" id="North-Servery" value="North-Servery" v-model="serveryFilter">
-        <label for="North-Servery">North</label></div>
-        <div><input type="checkbox" id="West-Servery" value="West-Servery" v-model="serveryFilter">
-        <label for="West-Servery">West</label></div>
-        <div><input type="checkbox" id="Seibel-Servery" value="Seibel-Servery" v-model="serveryFilter">
-        <label for="Seibel-Servery">Seibel</label></div>
-        <div><input type="checkbox" id="South-Servery" value="South-Servery" v-model="serveryFilter">
-        <label for="South-Servery">South</label></div>
+        <div><input type="checkbox" id="baker-kitchen" value="baker-kitchen" v-model="serveryFilter">
+        <label for="baker-kitchen">Baker</label></div>
+        <div><input type="checkbox" id="north-servery" value="north-servery" v-model="serveryFilter">
+        <label for="north-servery">North</label></div>
+        <div><input type="checkbox" id="west-servery" value="west-servery" v-model="serveryFilter">
+        <label for="west-servery">West</label></div>
+        <div><input type="checkbox" id="siebel-servery" value="siebel-servery" v-model="serveryFilter">
+        <label for="siebel-servery">Seibel</label></div>
+        <div><input type="checkbox" id="south-servery" value="south-servery" v-model="serveryFilter">
+        <label for="south-servery">South</label></div>
         </div>
 
         <div>
         <div>Filter Time</div>
         <select v-model="timeFilter">
             <option>All</option>
-            <option>lunch</option>
-            <option>dinner</option>
+            <option>Lunch</option>
+            <option>Dinner</option>
         </select>
         </div>
         <div>
@@ -111,13 +111,13 @@
                 <div class="dayFlex">
                 <div class="day" v-for="day in time.MealDayGroups" v-if="(daysFilter == day.Name || daysFilter == 'All')">
                     <span>{{JSON.parse(servery).Name.replaceAll("-"," ")}} {{day.Name}} {{time.Name}}</span>
-                    <div class="closed" v-if="day.Meals == null">
+                    <div class="closed" v-if="(day.Meals == null || day.Meals[0].Name == 'N/A')">
                         Servery Closed :(
                     </div>
                     <ul>
                     <li class = "food" v-for="food in day.Meals" v-bind:class="{selected :  food.Name == toRate}"
                                         v-on:click="function(e) {if(toRate == food.Name){toRate = ''; hidePopUp();}else{toRate = food.Name; movePopUp(e);}}">
-                        <span>{{food.Name}}</span>
+                        <span v-if="food.Name != 'N/A'">{{food.Name}}</span>
                         <span class="starHolder"><span class="star" v-for="star in food.Rating">★</span></span>
                     </li>
                     </ul>
