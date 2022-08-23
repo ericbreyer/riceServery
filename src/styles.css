@@ -69,6 +69,7 @@ body {
 .time {
     font-size: x-large;
     font-weight: normal;
+    padding: 0.5rem 0;
 }
 .day {
     font-size: medium;
@@ -159,7 +160,7 @@ ul {
     flex-wrap: wrap;
     gap: 1rem;
 
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -195,6 +196,7 @@ input[type="radio"] {
     background-color: white;
     z-index: 3;
     text-align: center;
+    padding-top: 5px;
 }
 
 .stickyMargin {

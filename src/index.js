@@ -12,9 +12,9 @@ let appendChild = new Vue({
         loading: true,
     },
     methods: {
-        currentDate: function() {
+        currentDate: function(offset) {
             today = new Date()
-            switch (today.getDay()) {
+            switch ((today.getDay() + offset) % 7) {
                 case 0:
                     this.daysFilter = "Sunday"
                     break
@@ -37,6 +37,8 @@ let appendChild = new Vue({
                     this.daysFilter = "Saturday"
                     break
             }
+        },
+        currentTime: function() {
             if (today.getHours() >= 14) {
                 this.timeFilter = "Dinner"
             }
@@ -144,6 +146,7 @@ let appendChild = new Vue({
         this.fetchData()
         setInterval(this.fetchData, 60 * 1000)
         this.loading = false
-        this.currentDate()
+        this.currentDate(0)
+        this.currentTime()
     }
 })

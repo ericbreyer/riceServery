@@ -20,8 +20,9 @@
         <div class="topBar">
             <div class="title">Owl Dining</div>
             
-            <button v-on:click="currentDate">Now</button>
+            <button v-on:click="function(){currentDate(0); currentTime()}">Now</button>
             <button v-on:click="function(){ serveryFilter = []; timeFilter='All'; daysFilter='All'}">All Days</button>
+            <button v-on:click="function(){ serveryFilter = []; timeFilter='All'; currentDate(1)}">Tomorrow</button>
         
             <button class="about" onclick="location.href='./about/'">About</button>
             
@@ -42,7 +43,7 @@
         <div><input type="checkbox" id="west-servery" value="west-servery" v-model="serveryFilter">
         <label for="west-servery">West</label></div>
         <div><input type="checkbox" id="siebel-servery" value="siebel-servery" v-model="serveryFilter">
-        <label for="siebel-servery">Seibel</label></div>
+        <label for="siebel-servery">Siebel</label></div>
         <div><input type="checkbox" id="south-servery" value="south-servery" v-model="serveryFilter">
         <label for="south-servery">South</label></div>
         </div>
@@ -101,16 +102,16 @@
         
         <div v-bind:class="[(daysFilter == 'All') ? 'serveryFlex' : 'serveryFlexRow']">
         <!--<div class="servery" v-for="servery in text" v-if="(serveyFilter == JSON.parse(servery).Name || serveyFilter == 'All')">-->
-        <div class="servery" v-for="servery in text" v-if="serveryFilter.includes(JSON.parse(servery).Name) || serveryFilter.length == 0">
-            <span class="sticky">{{JSON.parse(servery).Name.replaceAll("-"," ")}}</span>
+        <div class="servery" v-for="servery in text.sort(function(a,b) {return ((JSON.parse(a).Name.toUpperCase() > JSON.parse(b).Name.toUpperCase()) ? 1 : -1)})" v-if="serveryFilter.includes(JSON.parse(servery).Name) || serveryFilter.length == 0">
+            <span class="sticky">{{JSON.parse(servery).Name.replaceAll("-"," ").toUpperCase()}}</span>
             <div class="timeFlex">
             <div class="time" v-for="time in JSON.parse(servery).MealTimeGroups" v-if="(timeFilter == time.Name || timeFilter == 'All')">
                 
-                <span class="stickyMargin" v-if="timeFilter == 'All'">{{time.Name}}</span>
+                <!--<span class="stickyMargin" v-if="timeFilter == 'All'">{{time.Name}}</span>-->
                 
                 <div class="dayFlex">
                 <div class="day" v-for="day in time.MealDayGroups" v-if="(daysFilter == day.Name || daysFilter == 'All')">
-                    <span>{{JSON.parse(servery).Name.replaceAll("-"," ")}} {{day.Name}} {{time.Name}}</span>
+                    <span><!--{{JSON.parse(servery).Name.replaceAll("-"," ").toUpperCase()}}--> {{day.Name}} {{time.Name}}</span>
                     <div class="closed" v-if="(day.Meals == null || day.Meals[0].Name == 'N/A')">
                         Servery Closed :(
                     </div>
