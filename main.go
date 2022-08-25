@@ -1,6 +1,7 @@
 package main
 
 import (
+	"compress/gzip"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -77,16 +78,33 @@ func getServeryData(Servery string) (serveryGroup, error) {
 
 	//url := fmt.Sprintf("https://websvc-aws.rice.edu:8443/static-files/dining-assets/%s-Menu-Full-Week.js", Servery)
 	url := fmt.Sprintf("https://web-api3.rice.edu/static/%s-menu-full-week-new.js", Servery)
-	resp, err := http.Get(url)
-
+	req, _ := http.NewRequest("GET", url, nil)
+	req.Header.Add("Host", "ericbreyer.com")
+	req.Header.Add("Accept", "*/*")
+	req.Header.Add("accept-encoding", "gzip, deflate, br")
+	req.Header.Add("accept-language", "en-US,en;q=0.9")
+	req.Header.Add("User-Agent", "PostmanRuntime/7.28.1")
+	req.Header.Add("Connection", "keep-alive")
+	resp, err := http.DefaultClient.Do(req)
+	//resp, err := http.Get(url)
+	//fmt.Printf("%v\n", resp.Header)
 	if err != nil {
 		fmt.Printf("%v", err)
 		return serveryGroup{}, err
 	}
+	var reader io.ReadCloser
+
+	switch resp.Header.Get("Content-Encoding") {
+	case "gzip":
+		reader, _ = gzip.NewReader(resp.Body)
+		defer reader.Close()
+	default:
+		reader = resp.Body
+	}
 
 	defer resp.Body.Close()
 
-	body, err := io.ReadAll(resp.Body)
+	body, err := io.ReadAll(reader)
 
 	if err != nil {
 		fmt.Printf("%v", err)
