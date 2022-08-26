@@ -10241,892 +10241,6 @@
       "Date": "2022August26",
       "Serveries": [
         {
-          "Name": "seibel-servery",
-          "MealTimeGroups": [
-            {
-              "Name": "Lunch",
-              "MealDayGroups": [
-                {
-                  "Name": "Monday",
-                  "Meals": [
-                    {
-                      "Name": "Whole Grain Couscous Quinoa Pilaf",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Haricots Verts with Mushrooms",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Chicken with Cucumber Tomato Relish \u0026 Feta Cheese (Halal)",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Herb Marinated Cod",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Garlicky Broccoli Chickpea Rice",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Tomato Masala PAOW \u0026 Potatoes",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Tofu Vegetable Stir-fry",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "6364seibel-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Tuesday",
-                  "Meals": [
-                    {
-                      "Name": "Moroccan Rice Pilaf",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Roasted Beets \u0026 Cauliflower",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Chicken Yellow Curry (Halal)",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Italian Pork Sausage with Tomatoes \u0026 Peppers",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Braised Lentils",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Quinoa Garbanzo Patty",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Parmesan-style Tofu Cutlet",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "7813seibel-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Wednesday",
-                  "Meals": [
-                    {
-                      "Name": "Sauteed Cabbage \u0026 Potatoes",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Chicken Marinara \u0026 Mozzarella Sandwich (Halal)",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Spaghetti Squash with Herb Sweet Pea Pesto",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Fried Flounder with Tartar Sauce",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Sag Tofu Curry",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Southwest Cheddar Corn \u0026 Bean Stuffed Peppers",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "8986seibel-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Thursday",
-                  "Meals": [
-                    {
-                      "Name": "Basmati Rice",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Roasted Balsamic Mushrooms \u0026 Broccoli",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Chicken Vindaloo (Halal)",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Hoisin Beef Wrap",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Vegetable Fried Rice",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Teriyaki Plant-based Meatballs",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Vegetable Lasagna",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "10389seibel-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Friday",
-                  "Meals": [
-                    {
-                      "Name": "Pasta Pesto",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Chicken with Sun-dried Tomato Olive Relish (Halal)",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Roasted Garlic Butter Potatoes \u0026 Broccoli",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Tilapia Gratinata",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Coconut Thai Chili Sweet Potato \u0026 Tofu",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Shepherd\\\\\\'s Pie",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "11787seibel-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Saturday",
-                  "Meals": [
-                    {
-                      "Name": "Southwest Rice with Tofu",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Buffalo Wings",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Creamy Tomato Basil Pasta",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Sausage on a Stick",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Plant-based Chili",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Cheese Enchiladas",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Tortellini with Marinara",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "13213seibel-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Sunday",
-                  "Meals": [
-                    {
-                      "Name": "Wild Rice Pilaf",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Red Beans \u0026 Butternut Squash",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Lemon Caper Fish",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Turkey Meatballs in Mushroom Demi Glace",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Turmeric Barley, Cauliflower \u0026 Kale",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "14894seibel-servery34/2022",
-                  "Rating": 0
-                }
-              ]
-            },
-            {
-              "Name": "Dinner",
-              "MealDayGroups": [
-                {
-                  "Name": "Monday",
-                  "Meals": [
-                    {
-                      "Name": "Spanish Rice",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Pinto Beans",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Tortilla Crusted Tilapia",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Smoked Chicken with Chipotle Lime Vinaigrette (Halal)",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Southwest Chili Mac",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Barbecue Jackfruit Stuffed Peppers",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Calabasa Corn Tempeh Succotash",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "22621seibel-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Tuesday",
-                  "Meals": [
-                    {
-                      "Name": "Jasmine Rice",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Plum Glazed Baby Bok Choy",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Orange Glazed Chicken Thighs (Halal)",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Sesame Ginger Swai",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Soy Ginger Edamame Noodles",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Hoisin Broccoli Tofu",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Creamy Mushroom Kale Pasta",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "23996seibel-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Wednesday",
-                  "Meals": [
-                    {
-                      "Name": "Steamed Rice",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Okra, Tomato \u0026 Black-eyed Pea Ragout",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Blackened Chicken with Lemon Vinaigette",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Creole Shrimp",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Tandoori Tofu with Mango Relish",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Cheese Manicotti",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "25498seibel-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Thursday",
-                  "Meals": [
-                    {
-                      "Name": "Yukon Gold Potatoes",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Chicken in Smoky Cheese Sauce (Halal)",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Cranberry Orange Farro with Brussels Sprouts",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Smoked Pork with Hot Honey Vinaigrette",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Red Beans \u0026 Rice",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Chimichurri Tempeh \u0026 Cauliflower",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "26847seibel-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Friday",
-                  "Meals": [
-                    {
-                      "Name": "Herb Garlic Pasta",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Ratatouille",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Beef Meatballs in Marinara",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Chicken Pesto (Halal)",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Edamame Fried Rice",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Garlic Soy PAOW \u0026 Snap Peas",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Baked Pasta Florentine",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "28029seibel-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Saturday",
-                  "Meals": [
-                    {
-                      "Name": "Pasta Marinara",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Plant-based Tomato Mushroom Ragout",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Beef Stuffed Peppers",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Chicken Alfredo",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Rice with Navy Beans \u0026 Mushrooms",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Tofu in Tomato Basil Sauce",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Pasta Pesto",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "29508seibel-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Sunday",
-                  "Meals": [
-                    {
-                      "Name": "Garlic Mashed Potatoes",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Tuscan Bean Medley",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Salisbury Steak with Mushroom Gravy",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Tomato Basil Chicken with Mozzarella",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Lemon Artichoke, Squash Pasta",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Roasted Tomato, Tempeh \u0026 Mushroom Ragout",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "30952seibel-servery34/2022",
-                  "Rating": 0
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "Name": "north-servery",
-          "MealTimeGroups": [
-            {
-              "Name": "Lunch",
-              "MealDayGroups": [
-                {
-                  "Name": "Monday",
-                  "Meals": [
-                    {
-                      "Name": "Pasta Primavera",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Lemon Pepper Swai",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Wok: Sweet \u0026 Sour Chicken",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Red Bean \u0026 Kale Quinoa Pilaf",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Chipotle Tomato Tempeh",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Cheese Stuffed Manicotti",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "6362north-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Tuesday",
-                  "Meals": [
-                    {
-                      "Name": "Fiesta Rice",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Grilled Chicken Fajitas",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Wok: Jalapeño Shrimp",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Plant-based Sausage \u0026 Charro Beans",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Creamy Red Pepper PAOW",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Cheese Enchiladas",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "7687north-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Wednesday",
-                  "Meals": [
-                    {
-                      "Name": "Smokey Barbecue Potato Wedges",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Catfish Po\\\\\\'boy with Remoulade Slaw",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Wok: Green Curry Chicken",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Lentils with Mushrooms \u0026 Kale",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Plant-based Rice Stuffed Peppers",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Spinach Alfredo Baked Pasta",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "9017north-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Thursday",
-                  "Meals": [
-                    {
-                      "Name": "Spaghetti Pasta",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Chicken Meatballs with Marinara",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Wok: Mandarin Orange Pork",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Edamame Vegetable Fried Rice",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Chickpea Potato Ragu",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Vegetable Lasagna",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "10442north-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Friday",
-                  "Meals": [
-                    {
-                      "Name": "Coconut Rice \u0026 Peas",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Caribbean Chicken Legs",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Fried Flounder with Tartar Sauce",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Plant-based Chili Baked Pasta",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Eggplant \u0026 Bean Balsamico",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Southwest Timbale",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "11726north-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Saturday",
-                  "Meals": [
-                    {
-                      "Name": "N/A",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "13018north-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Sunday",
-                  "Meals": [
-                    {
-                      "Name": "Lyonnaise Potatoes",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Chicken Cordon Bleu",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Sesame Soy Tilapia",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Creamy Sun-dried Tomato Pasta",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Balsamic Roasted Tempeh \u0026 Mushrooms",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Spinach \u0026 Feta Quiche",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "13262north-servery34/2022",
-                  "Rating": 0
-                }
-              ]
-            },
-            {
-              "Name": "Dinner",
-              "MealDayGroups": [
-                {
-                  "Name": "Monday",
-                  "Meals": [
-                    {
-                      "Name": "Dirty Rice",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Pork \u0026 Beef Sausage Creole",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Blackened Catfish with Lemon Vinaigrette",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Coconut Curry Tofu",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Southwest Stuffed Poblano",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Cheese Stuffed Shells",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "21532north-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Tuesday",
-                  "Meals": [
-                    {
-                      "Name": "Garlic Butter Egg Noodles",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Chicken Pizzaiola",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Potato Crusted Cod",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Thai Chili Plant-based Meatballs",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Black-eyed Pea \u0026 Okra Ragu",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Broccoli Cheddar Rice",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "22920north-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Wednesday",
-                  "Meals": [
-                    {
-                      "Name": "Macaroni \u0026 Cheese",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Salsa Verde Pork Tenderloin",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Wok: Beef Stir Fry",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Black Beans \u0026 Plantains",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Smokey Tofu Cutlets",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Zucchini Cakes",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "24404north-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Thursday",
-                  "Meals": [
-                    {
-                      "Name": "Basmati Rice",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Butter Chicken Thighs",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "BBQ Shrimp \u0026 Vegetables",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "PAOW Rice Noodle Bowl",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Savory Tempeh Creole",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Cheese Stuffed Ravioli",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "25624north-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Friday",
-                  "Meals": [
-                    {
-                      "Name": "German Potato Salad",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Grilled Bratwurst with Sauerkraut \u0026 Apples",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Tortilla Crusted Tilapia",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Plant-based Sausage Jambalaya",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Ancho Lime Tofu",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Cheese Tortellini Marinara",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "26799north-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Saturday",
-                  "Meals": [
-                    {
-                      "Name": "N/A",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "28197north-servery34/2022",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Sunday",
-                  "Meals": [
-                    {
-                      "Name": "Cornbread Dressing",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Roast Turkey",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Glazed Ham Steaks",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "PAOW Wild Rice Pilaf",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Garam Masala Lentil Stew",
-                      "Rating": 0
-                    },
-                    {
-                      "Name": "Creamy Polenta with Kale \u0026 Cherry Tomatoes",
-                      "Rating": 0
-                    }
-                  ],
-                  "Id": "28442north-servery34/2022",
-                  "Rating": 0
-                }
-              ]
-            }
-          ]
-        },
-        {
           "Name": "south-servery",
           "MealTimeGroups": [
             {
@@ -11521,6 +10635,483 @@
                     }
                   ],
                   "Id": "26651south-servery34/2022",
+                  "Rating": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "seibel-servery",
+          "MealTimeGroups": [
+            {
+              "Name": "Lunch",
+              "MealDayGroups": [
+                {
+                  "Name": "Monday",
+                  "Meals": [
+                    {
+                      "Name": "Whole Grain Couscous Quinoa Pilaf",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Haricots Verts with Mushrooms",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Chicken with Cucumber Tomato Relish \u0026 Feta Cheese (Halal)",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Herb Marinated Cod",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Garlicky Broccoli Chickpea Rice",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Tomato Masala PAOW \u0026 Potatoes",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Tofu Vegetable Stir-fry",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "6364seibel-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Tuesday",
+                  "Meals": [
+                    {
+                      "Name": "Moroccan Rice Pilaf",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Roasted Beets \u0026 Cauliflower",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Chicken Yellow Curry (Halal)",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Italian Pork Sausage with Tomatoes \u0026 Peppers",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Braised Lentils",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Quinoa Garbanzo Patty",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Parmesan-style Tofu Cutlet",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "7813seibel-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Wednesday",
+                  "Meals": [
+                    {
+                      "Name": "Sauteed Cabbage \u0026 Potatoes",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Chicken Marinara \u0026 Mozzarella Sandwich (Halal)",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Spaghetti Squash with Herb Sweet Pea Pesto",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Fried Flounder with Tartar Sauce",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Sag Tofu Curry",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Southwest Cheddar Corn \u0026 Bean Stuffed Peppers",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "8986seibel-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Thursday",
+                  "Meals": [
+                    {
+                      "Name": "Basmati Rice",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Roasted Balsamic Mushrooms \u0026 Broccoli",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Chicken Vindaloo (Halal)",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Hoisin Beef Wrap",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Vegetable Fried Rice",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Teriyaki Plant-based Meatballs",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Vegetable Lasagna",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "10389seibel-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Friday",
+                  "Meals": [
+                    {
+                      "Name": "Pasta Pesto",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Chicken with Sun-dried Tomato Olive Relish (Halal)",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Roasted Garlic Potatoes \u0026 Broccoli",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Tilapia Gratinata",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Coconut Thai Chili Sweet Potato \u0026 Tofu",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Shepherd\\\\\\'s Pie",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "11787seibel-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Saturday",
+                  "Meals": [
+                    {
+                      "Name": "Southwest Rice with Tofu",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Buffalo Wings",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Creamy Tomato Basil Pasta",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Sausage on a Stick",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Plant-based Chili",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Cheese Enchiladas",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Tortellini with Marinara",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "13248seibel-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Sunday",
+                  "Meals": [
+                    {
+                      "Name": "Wild Rice Pilaf",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Red Beans \u0026 Butternut Squash",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Lemon Caper Fish",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Turkey Meatballs in Mushroom Demi Glace",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Turmeric Barley, Cauliflower \u0026 Kale",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "14929seibel-servery34/2022",
+                  "Rating": 0
+                }
+              ]
+            },
+            {
+              "Name": "Dinner",
+              "MealDayGroups": [
+                {
+                  "Name": "Monday",
+                  "Meals": [
+                    {
+                      "Name": "Spanish Rice",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Pinto Beans",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Tortilla Crusted Tilapia",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Smoked Chicken with Chipotle Lime Vinaigrette (Halal)",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Southwest Chili Mac",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Barbecue Jackfruit Stuffed Peppers",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Calabasa Corn Tempeh Succotash",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "22656seibel-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Tuesday",
+                  "Meals": [
+                    {
+                      "Name": "Jasmine Rice",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Plum Glazed Baby Bok Choy",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Orange Glazed Chicken Thighs (Halal)",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Sesame Ginger Swai",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Soy Ginger Edamame Noodles",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Hoisin Broccoli Tofu",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Creamy Mushroom Kale Pasta",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "24031seibel-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Wednesday",
+                  "Meals": [
+                    {
+                      "Name": "Steamed Rice",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Okra, Tomato \u0026 Black-eyed Pea Ragout",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Blackened Chicken with Lemon Vinaigette",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Creole Shrimp",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Tandoori Tofu with Mango Relish",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Cheese Manicotti",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "25533seibel-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Thursday",
+                  "Meals": [
+                    {
+                      "Name": "Yukon Gold Potatoes",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Chicken in Smoky Cheese Sauce (Halal)",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Cranberry Orange Farro with Brussels Sprouts",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Smoked Pork with Hot Honey Vinaigrette",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Red Beans \u0026 Rice",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Chimichurri Tempeh \u0026 Cauliflower",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "26882seibel-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Friday",
+                  "Meals": [
+                    {
+                      "Name": "Herb Garlic Pasta",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Ratatouille",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Beef Meatballs in Marinara",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Chicken Pesto (Halal)",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Edamame Fried Rice",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Garlic Soy PAOW \u0026 Snap Peas",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Baked Pasta Florentine",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "28064seibel-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Saturday",
+                  "Meals": [
+                    {
+                      "Name": "Pasta Marinara",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Plant-based Tomato Mushroom Ragout",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Beef Stuffed Peppers",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Chicken Alfredo",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Rice with Navy Beans \u0026 Mushrooms",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Tofu in Tomato Basil Sauce",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Pasta Pesto",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "29543seibel-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Sunday",
+                  "Meals": [
+                    {
+                      "Name": "Garlic Mashed Potatoes",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Tuscan Bean Medley",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Salisbury Steak with Mushroom Gravy",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Tomato Basil Chicken with Mozzarella",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Lemon Artichoke, Squash Pasta",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Roasted Tomato, Tempeh \u0026 Mushroom Ragout",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "30987seibel-servery34/2022",
                   "Rating": 0
                 }
               ]
@@ -12239,6 +11830,415 @@
                     }
                   ],
                   "Id": "24981baker-kitchen34/2022",
+                  "Rating": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "north-servery",
+          "MealTimeGroups": [
+            {
+              "Name": "Lunch",
+              "MealDayGroups": [
+                {
+                  "Name": "Monday",
+                  "Meals": [
+                    {
+                      "Name": "Pasta Primavera",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Lemon Pepper Swai",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Wok: Sweet \u0026 Sour Chicken",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Red Bean \u0026 Kale Quinoa Pilaf",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Chipotle Tomato Tempeh",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Cheese Stuffed Manicotti",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "6362north-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Tuesday",
+                  "Meals": [
+                    {
+                      "Name": "Fiesta Rice",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Grilled Chicken Fajitas",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Wok: Jalapeño Shrimp",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Plant-based Sausage \u0026 Charro Beans",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Creamy Red Pepper PAOW",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Cheese Enchiladas",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "7687north-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Wednesday",
+                  "Meals": [
+                    {
+                      "Name": "Smokey Barbecue Potato Wedges",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Catfish Po\\\\\\'boy with Remoulade Slaw",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Wok: Green Curry Chicken",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Lentils with Mushrooms \u0026 Kale",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Plant-based Rice Stuffed Peppers",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Spinach Alfredo Baked Pasta",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "9017north-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Thursday",
+                  "Meals": [
+                    {
+                      "Name": "Spaghetti Pasta",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Chicken Meatballs with Marinara",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Wok: Mandarin Orange Pork",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Edamame Vegetable Fried Rice",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Chickpea Potato Ragu",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Vegetable Lasagna",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "10442north-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Friday",
+                  "Meals": [
+                    {
+                      "Name": "Coconut Rice \u0026 Peas",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Caribbean Chicken Legs",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Fried Flounder with Tartar Sauce",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Plant-based Chili Baked Pasta",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Eggplant \u0026 Bean Balsamico",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Southwest Timbale",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "11726north-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Saturday",
+                  "Meals": [
+                    {
+                      "Name": "N/A",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "13018north-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Sunday",
+                  "Meals": [
+                    {
+                      "Name": "Lyonnaise Potatoes",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Chicken Cordon Bleu",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Sesame Soy Tilapia",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Creamy Sun-dried Tomato Pasta",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Balsamic Roasted Tempeh \u0026 Mushrooms",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Spinach \u0026 Feta Quiche",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "13262north-servery34/2022",
+                  "Rating": 0
+                }
+              ]
+            },
+            {
+              "Name": "Dinner",
+              "MealDayGroups": [
+                {
+                  "Name": "Monday",
+                  "Meals": [
+                    {
+                      "Name": "Dirty Rice",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Pork \u0026 Beef Sausage Creole",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Blackened Catfish with Lemon Vinaigrette",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Coconut Curry Tofu",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Southwest Stuffed Poblano",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Cheese Stuffed Shells",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "21532north-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Tuesday",
+                  "Meals": [
+                    {
+                      "Name": "Garlic Butter Egg Noodles",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Chicken Pizzaiola",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Potato Crusted Cod",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Thai Chili Plant-based Meatballs",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Black-eyed Pea \u0026 Okra Ragu",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Broccoli Cheddar Rice",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "22920north-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Wednesday",
+                  "Meals": [
+                    {
+                      "Name": "Macaroni \u0026 Cheese",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Salsa Verde Pork Tenderloin",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Wok: Beef Stir Fry",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Black Beans \u0026 Plantains",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Smokey Tofu Cutlets",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Zucchini Cakes",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "24404north-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Thursday",
+                  "Meals": [
+                    {
+                      "Name": "Basmati Rice",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Butter Chicken Thighs",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "BBQ Shrimp \u0026 Vegetables",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "PAOW Rice Noodle Bowl",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Savory Tempeh Creole",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Cheese Stuffed Ravioli",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "25624north-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Friday",
+                  "Meals": [
+                    {
+                      "Name": "German Potato Salad",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Grilled Bratwurst with Sauerkraut \u0026 Apples",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Tortilla Crusted Tilapia",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Plant-based Sausage Jambalaya",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Ancho Lime Tofu",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Cheese Tortellini Marinara",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "26799north-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Saturday",
+                  "Meals": [
+                    {
+                      "Name": "N/A",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "28197north-servery34/2022",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Sunday",
+                  "Meals": [
+                    {
+                      "Name": "Cornbread Dressing",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Roast Turkey",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Glazed Ham Steaks",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "PAOW Wild Rice Pilaf",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Garam Masala Lentil Stew",
+                      "Rating": 0
+                    },
+                    {
+                      "Name": "Creamy Polenta with Kale \u0026 Cherry Tomatoes",
+                      "Rating": 0
+                    }
+                  ],
+                  "Id": "28442north-servery34/2022",
                   "Rating": 0
                 }
               ]
