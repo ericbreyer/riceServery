@@ -370,6 +370,9 @@ input[type="radio"] {
     .stickyMargin {
         top: 7rem;
     }
+    .topBar button {
+        font-size: .8rem;
+    }
   }
 
   #loading {
