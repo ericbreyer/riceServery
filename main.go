@@ -15,6 +15,8 @@ import (
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/dsnet/compress/brotli"
 )
 
 type DataBlockType int64
@@ -75,20 +77,38 @@ func getMatchesWithIndex(body []byte, myregex *regexp.Regexp) ([][]byte, [][]int
 }
 
 func getServeryData(Servery string) (serveryGroup, error) {
+	// url0 := "https://dining.rice.edu/baker-college-kitchen/full-week-menu"
+	// req0, _ := http.NewRequest("GET", url0, nil)
+	// resp0, err := http.DefaultClient.Do(req0)
+	// print(len(resp0.Cookies()))
+	// body0, err := io.ReadAll(resp0.Body)
+	// fmt.Printf("%s", body0)
 
 	//url := fmt.Sprintf("https://websvc-aws.rice.edu:8443/static-files/dining-assets/%s-Menu-Full-Week.js", Servery)
-	url := fmt.Sprintf("https://web-api3.rice.edu/static/%s-menu-full-week-new.js", Servery)
+	url := fmt.Sprintf("https://staticws.b-cdn.net/dining/%s-menu-full-week-new.js", Servery)
+	//url := fmt.Sprintf("https://web-api3.rice.edu/static/%s-menu-full-week-new.js", Servery)
 	req, _ := http.NewRequest("GET", url, nil)
-	req.Header.Add("Host", "web-api3.rice.edu")
-	req.Header.Add("Accept", "*/*")
+	req.Header.Add("Host", "staticws.b-cdn.net")
+	req.Header.Add("Accept", "	text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9")
+	req.Header.Add("Cl", "gzip, deflate, br")
 	req.Header.Add("accept-encoding", "gzip, deflate, br")
 	req.Header.Add("accept-language", "en-US,en;q=0.9")
+	req.Header.Add("cache-control", "max-age=0")
+	req.Header.Add("sec-fetch-mode", "navigate")
+	req.Header.Add("sec-fetch-site", "none")
+	req.Header.Add("sec-fetch-user", "?1")
+	req.Header.Add("upgrade-insecure-requests", "1")
 	req.Header.Add("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.87 Safari/537.36")
 	req.Header.Add("Connection", "keep-alive")
 	req.Header.Add("Sec-Fetch-Site", "cross-site")
+
+	req.AddCookie(&http.Cookie{Name: "NID", Value: "RUxmt2dUKb6R_NlYrONl5C9Dcj0y0BzVXgo7yC_kHqA_zzHsM1NGUrGXvZ5_FBYchZ5u7LyHfwOBSfvYdguZOiukqdPYFgLPCY2DU4l5pqdy8tNBd0GklQT7FCci6AypX_DQsBemZj2mOsMz70zGe5zSwp_8m1_Kod27EiSGvqTPsvQz8s_5e_Jc0LpH"})
+	req.AddCookie(&http.Cookie{Name: "__Secure-3PAPISID", Value: "8xq3QzorcCtMrhZs/AH87b3RT32JSYRpGt"})
+	req.AddCookie(&http.Cookie{Name: "__Secure-3PSID", Value: "NwjqU1Nr8BRMjtiUpdSj0FGOWiFbx27YMt57xKk7Efx3kCTWSmQRnA-kGQ5EWYTd2y4JJg."})
+	req.AddCookie(&http.Cookie{Name: "__Secure-3PSIDCC", Value: "AEf-XMQ4hLqlQQKIUNNcvWy6KkdJ1mEbTmrk4SxVKqV7cloczy7F5TrJD8oBiAmkGC8sO5iRMw"})
 	resp, err := http.DefaultClient.Do(req)
 	//resp, err := http.Get(url)
-	fmt.Printf("%v\n", resp.Header)
+	//fmt.Printf("%v\n", resp.Header)
 	if err != nil {
 		fmt.Printf("%v", err)
 		return serveryGroup{}, err
@@ -99,6 +119,8 @@ func getServeryData(Servery string) (serveryGroup, error) {
 	case "gzip":
 		reader, _ = gzip.NewReader(resp.Body)
 		defer reader.Close()
+	case "br":
+		reader, _ = brotli.NewReader(resp.Body, &brotli.ReaderConfig{})
 	default:
 		reader = resp.Body
 	}
@@ -114,7 +136,7 @@ func getServeryData(Servery string) (serveryGroup, error) {
 
 	rawData := make([]DataBlock, 0)
 
-	timeRegex, _ := regexp.Compile(`<span class=\\"meal-time[^>]*>[^<]*`)
+	timeRegex, _ := regexp.Compile(`<span class="meal-time[^>]*>[^<]*`)
 	timeMatched, timeMatchedIdx := getMatchesWithIndex(body, timeRegex)
 
 	for idx, slice := range timeMatched {
@@ -132,18 +154,18 @@ func getServeryData(Servery string) (serveryGroup, error) {
 			Position: timeMatchedIdx[idx][0]})
 	}
 
-	foodsRegex, _ := regexp.Compile(`<div class=\\"mitem\\">[^<]*`)
+	foodsRegex, _ := regexp.Compile(`<div class="mitem">[^<]*`)
 	foodsMatched, foodsMatchedIdx := getMatchesWithIndex(body, foodsRegex)
 
 	for idx, slice := range foodsMatched {
 
 		rawData = append(rawData, DataBlock{
 			DataType: food,
-			Text:     strings.TrimSpace(fmt.Sprintf("%s", slice[21:])),
+			Text:     strings.TrimSpace(fmt.Sprintf("%s", slice[19:])),
 			Position: foodsMatchedIdx[idx][0]})
 	}
 
-	dayTimeRegex, _ := regexp.Compile(`background:#212d64;\\">[^<]*`)
+	dayTimeRegex, _ := regexp.Compile(`background:#212d64;">[^<]*`)
 	dayTimeMatched, dayTimeMatchedIdx := getMatchesWithIndex(body, dayTimeRegex)
 
 	for idx, slice := range dayTimeMatched {
@@ -277,7 +299,7 @@ func main() {
 
 	//update data every minute concurrently!
 	go func() {
-		c := time.Tick(time.Minute)
+		c := time.Tick(time.Hour)
 		for range c {
 			data = getAllServeryData()
 			addToJSON()
