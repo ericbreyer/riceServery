@@ -194,7 +194,7 @@ input[type="radio"] {
     position: sticky;
     top: 3rem;
     background-color: white;
-    /*z-index: 3;*/
+    z-index: 3;
     text-align: center;
     padding-top: 5px;
 }
