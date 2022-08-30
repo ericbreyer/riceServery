@@ -232,7 +232,7 @@ input[type="radio"] {
 
 .topBar button:first-of-type {
     margin-left: auto;
-    border-left: 2px solid var(--dark-blue-gray);
+    border-left: 2px solid var(--blue-gray);
 }
 
 .topBar button{
@@ -251,7 +251,7 @@ input[type="radio"] {
 .topBar button:last-of-type {
     margin-left: 20px;
     margin-right: 5px;
-    border-left: 2px solid var(--dark-blue-gray);
+    border-left: 2px solid var(--blue-gray);
 }
 
 .title {
