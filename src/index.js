@@ -144,7 +144,7 @@ let appendChild = new Vue({
     },
     created: function() {
         this.fetchData()
-        setInterval(this.fetchData, 60 * 1000)
+        setInterval(this.fetchData, 60 * 60 * 1000)
         this.loading = false
         this.currentDate(0)
         this.currentTime()

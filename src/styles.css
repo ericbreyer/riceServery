@@ -19,7 +19,7 @@ body {
 .popUp {
     position: absolute;
     background-color: gray;
-    z-index: 2;
+    z-index: 4;
     width: 20ch;
     padding: 5px;
     border: 2px solid black;
