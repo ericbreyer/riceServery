@@ -136,9 +136,8 @@ func getServeryData(Servery string) (serveryGroup, error) {
 
 	rawData := make([]DataBlock, 0)
 
-	timeRegex, _ := regexp.Compile(`<span class="meal-time[^>]*>[^<]*`)
+	timeRegex, _ := regexp.Compile(`<span class=\\"meal-time[^>]*>[^<]*`)
 	timeMatched, timeMatchedIdx := getMatchesWithIndex(body, timeRegex)
-
 	for idx, slice := range timeMatched {
 
 		temp, _ := regexp.Compile(`Lunch|Dinner`)
@@ -154,18 +153,18 @@ func getServeryData(Servery string) (serveryGroup, error) {
 			Position: timeMatchedIdx[idx][0]})
 	}
 
-	foodsRegex, _ := regexp.Compile(`<div class="mitem">[^<]*`)
+	foodsRegex, _ := regexp.Compile(`<div class=\\"mitem\\">[^<]*`)
 	foodsMatched, foodsMatchedIdx := getMatchesWithIndex(body, foodsRegex)
 
 	for idx, slice := range foodsMatched {
 
 		rawData = append(rawData, DataBlock{
 			DataType: food,
-			Text:     strings.TrimSpace(fmt.Sprintf("%s", slice[19:])),
+			Text:     strings.TrimSpace(fmt.Sprintf("%s", slice[21:])),
 			Position: foodsMatchedIdx[idx][0]})
 	}
 
-	dayTimeRegex, _ := regexp.Compile(`background:#212d64;">[^<]*`)
+	dayTimeRegex, _ := regexp.Compile(`background:#212d64;\\">[^<]*`)
 	dayTimeMatched, dayTimeMatchedIdx := getMatchesWithIndex(body, dayTimeRegex)
 
 	for idx, slice := range dayTimeMatched {
