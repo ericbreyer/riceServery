@@ -1,5 +1,5 @@
 // +heroku goVersion go1.17
-go 1.18
+go 1.17
 
 module github.com/ericbreyer/riceServery
 

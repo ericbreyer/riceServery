@@ -1,0 +1,5 @@
+# github.com/dsnet/compress v0.0.1
+## explicit; go 1.9
+github.com/dsnet/compress/brotli
+github.com/dsnet/compress/internal
+github.com/dsnet/compress/internal/errors
