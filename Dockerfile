@@ -16,4 +16,5 @@ RUN GOOS=linux go build -ldflags="-s -w" .
 ENTRYPOINT /go/bin/riceServery
 
 # Document that the service listens on port 8080.
+EXPOSE 80
 EXPOSE 8080
