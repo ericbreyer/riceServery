@@ -62,6 +62,7 @@ let appendChild = new Vue({
                                 "Name": e4.Name,
                                 "Day": e3.Name,
                                 "Time": e2.Name,
+                                "Alergies": e4.Alergies,
                                 "Servery": JSON.parse(e1).Name
                             })
                         })

@@ -26,6 +26,7 @@ const (
 	day
 	mealTime
 	servery
+	allergtre
 )
 
 type DataBlock struct {
@@ -52,8 +53,26 @@ type mealDayGroup struct {
 }
 
 type meal struct {
-	Name   string
-	Rating int
+	Name     string
+	Rating   int
+	Alergies []allergy
+}
+
+type allergy struct {
+	Name string
+}
+
+var alergyToID map[string]allergy = map[string]allergy{
+	"eggs":       {"E"},
+	"fish":       {"F"},
+	"gluten":     {"G"},
+	"milk":       {"M"},
+	"peanuts":    {"P"},
+	"shellfish":  {"Sh"},
+	"soy":        {"So"},
+	"tree-nuts":  {"N"},
+	"vegan":      {"Veg"},
+	"vegetarian": {"V"},
 }
 
 type averageRating struct {
@@ -164,6 +183,17 @@ func getServeryData(Servery string) (serveryGroup, error) {
 			Position: foodsMatchedIdx[idx][0]})
 	}
 
+	allergiesRegex, _ := regexp.Compile(`<div class=\\"icons icon-only icons-([^\\]*)`)
+	allergiesMatched, allergiesMatchedIdx := getMatchesWithIndex(body, allergiesRegex)
+
+	for idx, slice := range allergiesMatched {
+
+		rawData = append(rawData, DataBlock{
+			DataType: allergtre,
+			Text:     strings.TrimSpace(fmt.Sprintf("%s", slice[35:])),
+			Position: allergiesMatchedIdx[idx][0]})
+	}
+
 	dayTimeRegex, _ := regexp.Compile(`background:#212d64;\\">[^<]*`)
 	dayTimeMatched, dayTimeMatchedIdx := getMatchesWithIndex(body, dayTimeRegex)
 
@@ -189,6 +219,7 @@ func getServeryData(Servery string) (serveryGroup, error) {
 	data := serveryGroup{Name: Servery}
 	var currentMealTimeBlock mealTimeGroup
 	var currentMealDayBlock mealDayGroup
+	var currentFoodBlock meal
 	for _, block := range rawData {
 		switch block.DataType {
 		case servery:
@@ -208,6 +239,9 @@ func getServeryData(Servery string) (serveryGroup, error) {
 			year, week := time.Now().ISOWeek()
 			currentMealDayBlock = mealDayGroup{Name: block.Text, Id: fmt.Sprintf("%d%s%d/%d", block.Position, Servery, week, year)}
 		case food:
+			if currentFoodBlock.Name != "" {
+				currentMealDayBlock.Meals = append(currentMealDayBlock.Meals, currentFoodBlock)
+			}
 			rating := 0
 
 			if val, ok := idToRating[block.Text]; ok {
@@ -215,16 +249,18 @@ func getServeryData(Servery string) (serveryGroup, error) {
 			}
 
 			if block.Text != "CLOSED" && block.Text != "Closed" {
-				currentMealDayBlock.Meals = append(currentMealDayBlock.Meals, meal{Name: block.Text, Rating: rating})
+				currentFoodBlock = meal{Name: block.Text, Rating: rating}
 			}
-
+		case allergtre:
+			currentFoodBlock.Alergies = append(currentFoodBlock.Alergies, alergyToID[block.Text])
 		}
 	}
+	currentMealDayBlock.Meals = append(currentMealDayBlock.Meals, currentFoodBlock)
 	currentMealTimeBlock.MealDayGroups = append(currentMealTimeBlock.MealDayGroups, currentMealDayBlock)
 	data.MealTimeGroups = append(data.MealTimeGroups, currentMealTimeBlock)
 
-	//dataJson, _ := json.MarshalIndent(data, "", "  ")
-	//fmt.Printf("%s", dataJson)
+	// dataJson, _ := json.MarshalIndent(data, "", "  ")
+	// fmt.Printf("%s", dataJson)
 
 	return data, nil
 }

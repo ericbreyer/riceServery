@@ -118,7 +118,7 @@
                     <ul>
                     <li class = "food" v-for="food in day.Meals" v-bind:class="{selected :  food.Name == toRate}"
                                         v-on:click="function(e) {if(toRate == food.Name){toRate = ''; hidePopUp();}else{toRate = food.Name; movePopUp(e);}}">
-                        <span v-if="food.Name != 'N/A'">{{food.Name}}</span>
+                        <span v-if="food.Name != 'N/A'">{{food.Name}}<span class="allergy" v-for="allergy in food.Alergies"> {{allergy.Name}}</span></span>
                         <span class="starHolder"><span class="star" v-for="star in food.Rating">★</span></span>
                     </li>
                     </ul>

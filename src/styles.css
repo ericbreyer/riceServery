@@ -384,3 +384,8 @@ input[type="radio"] {
     right: 0;
     left: 0;
   }
+
+  .allergy {
+    font-style: italic;
+    font-size: .75em;
+  }
