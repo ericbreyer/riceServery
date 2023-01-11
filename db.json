@@ -21855,6 +21855,1217 @@
       "Date": "2023January11",
       "Serveries": [
         {
+          "Name": "west-servery",
+          "MealTimeGroups": [
+            {
+              "Name": "Lunch",
+              "MealDayGroups": [
+                {
+                  "Name": "Monday",
+                  "Meals": [
+                    {
+                      "Name": "Chicken \u0026 Dumplings",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Haricots Verts \u0026 Mushrooms",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Bratwurst Sausage with Sauerkraut",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Rice \u0026 Beans with Salsa",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Eggplant, Tomato \u0026 Potato Ragout",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Ginger Plum Glazed Tofu",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "6359west-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Tuesday",
+                  "Meals": [
+                    {
+                      "Name": "Philly Steak Sandwich",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Seasoned Steak Fries",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Golden Fried Catfish with Tartar Sauce",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "E"
+                        },
+                        {
+                          "Name": "F"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Tofu with Artichokes \u0026 Sun-dried Tomatoes",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Baked Pasta",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "7853west-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Wednesday",
+                  "Meals": [
+                    {
+                      "Name": "Mexican Beef Lasagna",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Fiesta Corn Rice",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Chicken in Spanish Sauce",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Black Beans \u0026 Roasted Plantains",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Curried Lentils",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Tofu Potato Masala",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "9188west-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Thursday",
+                  "Meals": [
+                    {
+                      "Name": "Steamed Rice",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Chicken Red Curry",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Sweet \u0026 Sour Beef Meatballs",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Creamy Potato Togurt Curry",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Plant-based Picadillo",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "10603west-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Friday",
+                  "Meals": [
+                    {
+                      "Name": "Herb Roasted Potatoes",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Greek Chicken",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Fish Gratinata",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "F"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Pasta Pesto",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Tofu Mango Rice",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Plant-based Meatballs in Chipotle Tomato Sauce",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "11811west-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Saturday",
+                  "Meals": [
+                    {
+                      "Name": "Macaroni \u0026 Cheese",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Buffalo Chicken Wings",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Smoked Pork Sausage on a Stick",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Barbecue Beans",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Ricotta Stuffed Shells with Marinara",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "13370west-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Sunday",
+                  "Meals": [
+                    {
+                      "Name": "Pasta Marinara",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Italian Pork Sausage",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Chicken Alfredo",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Mini Pesto Pizzas",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "14743west-servery2/2023",
+                  "Rating": 0
+                }
+              ]
+            },
+            {
+              "Name": "Dinner",
+              "MealDayGroups": [
+                {
+                  "Name": "Monday",
+                  "Meals": [
+                    {
+                      "Name": "Red Quinoa with Kidney Beans",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Garlic Mashed Potatoes",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Chicken Fried Chicken",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Bratwurst Sausage with Sauerkraut",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Tofu Fried Rice",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Garbanzo Curry",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "22775west-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Tuesday",
+                  "Meals": [
+                    {
+                      "Name": "Jasmine Rice",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Chicken Teriyaki",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Chili Garlic Braised Pork Shoulder",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Sesame Soy Ginger Noodle Bowl",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Tofu Stir-fry",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "24031west-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Wednesday",
+                  "Meals": [
+                    {
+                      "Name": "Pasta with Garlic Herb Oil",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Chicken \u0026 Beef Meatballs in Marinara (Halal)",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Sautéed Fish with Lemon Caper Vinaigrette",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "F"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Zucchini, Shredded Tofu Tomato Ragout",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Ricotta Spinach Dumplings",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "25139west-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Thursday",
+                  "Meals": [
+                    {
+                      "Name": "Mexican Rice Pilaf",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Beef Fajitas",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Chicken in Ancho Cream",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Black Beans",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Southwest Cheddar Potato Casserole",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "26664west-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Friday",
+                  "Meals": [
+                    {
+                      "Name": "Steamed Rice",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Lemon Pepper Fish",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "F"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Honey Sriracha Chicken",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Ricotta Baked Pasta",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Orange Glazed Tofu",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "27916west-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Saturday",
+                  "Meals": [
+                    {
+                      "Name": "Turmeric Rice",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Coconut Tomato Curry Chicken",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Fish Veracruz",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "F"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Potato Chickpea Curry",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Tortellini Pesto",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "29205west-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Sunday",
+                  "Meals": [
+                    {
+                      "Name": "Garlic Roasted Potatoes",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Roast Pork Loin with Honey Mustard Caper Vinaigrette",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Barbecue Chickeni Drumsticks",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Broccoli Cheddar Rice",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Baked Beans",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "30450west-servery2/2023",
+                  "Rating": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
           "Name": "south-servery",
           "MealTimeGroups": [
             {
@@ -21943,14 +23154,7 @@
                           "Name": "M"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "6365south-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Tuesday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Tomato Bisque \u0026 Grilled Cheese Sandwiches",
                       "Rating": 0,
@@ -21968,7 +23172,14 @@
                           "Name": "E"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "6365south-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Tuesday",
+                  "Meals": [
                     {
                       "Name": "Parsley Egg Noodle Pasta",
                       "Rating": 0,
@@ -22058,14 +23269,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "8082south-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Wednesday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Italian Sausage Supreme Gluten Free Pizza",
                       "Rating": 0,
@@ -22080,7 +23284,14 @@
                           "Name": "E"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "8082south-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Wednesday",
+                  "Meals": [
                     {
                       "Name": "Garlic \u0026 Herb Baby Potatoes",
                       "Rating": 0,
@@ -22131,14 +23342,7 @@
                           "Name": "E"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "9894south-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Thursday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Buffalo Chicken \u0026 Blue Cheese Gluten Free Pizza",
                       "Rating": 0,
@@ -22153,7 +23357,14 @@
                           "Name": "E"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "9894south-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Thursday",
+                  "Meals": [
                     {
                       "Name": "Rice \u0026 Red Quinoa Pilaf Medley",
                       "Rating": 0,
@@ -22207,14 +23418,7 @@
                           "Name": "Veg"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "11046south-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Friday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Fried Cheese Curds at the Grill",
                       "Rating": 0,
@@ -22229,7 +23433,14 @@
                           "Name": "M"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "11046south-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Friday",
+                  "Meals": [
                     {
                       "Name": "Macaroni \u0026 Cheese",
                       "Rating": 0,
@@ -22298,14 +23509,7 @@
                           "Name": "Veg"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "12273south-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Saturday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Three Cheese Gluten Free Pizza",
                       "Rating": 0,
@@ -22325,17 +23529,24 @@
                       ]
                     }
                   ],
+                  "Id": "12273south-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Saturday",
+                  "Meals": [
+                    {
+                      "Name": "N/A",
+                      "Rating": 0,
+                      "Alergies": null
+                    }
+                  ],
                   "Id": "13764south-servery2/2023",
                   "Rating": 0
                 },
                 {
                   "Name": "Sunday",
                   "Meals": [
-                    {
-                      "Name": "N/A",
-                      "Rating": 0,
-                      "Alergies": null
-                    },
                     {
                       "Name": "Rice Pilaf",
                       "Rating": 0,
@@ -22485,14 +23696,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "22239south-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Tuesday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Spicy Chicken Sandwich with Kale Slaw",
                       "Rating": 0,
@@ -22504,7 +23708,14 @@
                           "Name": "So"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "22239south-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Tuesday",
+                  "Meals": [
                     {
                       "Name": "Steamed Jasmine Rice",
                       "Rating": 0,
@@ -22570,14 +23781,7 @@
                           "Name": "Veg"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "23365south-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Wednesday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Mini Vegetable Eggrolls at the Grill",
                       "Rating": 0,
@@ -22595,7 +23799,14 @@
                           "Name": "E"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "23365south-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Wednesday",
+                  "Meals": [
                     {
                       "Name": "Spaghetti Pasta",
                       "Rating": 0,
@@ -22649,14 +23860,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "24778south-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Thursday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Sriracha Spiced Chicken Tenders at the Grill",
                       "Rating": 0,
@@ -22668,7 +23872,14 @@
                           "Name": "So"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "24778south-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Thursday",
+                  "Meals": [
                     {
                       "Name": "Garlic \u0026 Chive Mashed Potatoes",
                       "Rating": 0,
@@ -22731,14 +23942,7 @@
                           "Name": "E"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "25941south-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Friday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Fried Okra at the Grill",
                       "Rating": 0,
@@ -22753,7 +23957,14 @@
                           "Name": "So"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "25941south-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Friday",
+                  "Meals": [
                     {
                       "Name": "Lemon \u0026 Herb Bowtie Pasta",
                       "Rating": 0,
@@ -22819,14 +24030,7 @@
                           "Name": "Veg"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "27238south-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Saturday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Fried Cauliflower with Thai Chili Dipping Sauce",
                       "Rating": 0,
@@ -22849,17 +24053,24 @@
                       ]
                     }
                   ],
+                  "Id": "27238south-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Saturday",
+                  "Meals": [
+                    {
+                      "Name": "N/A",
+                      "Rating": 0,
+                      "Alergies": null
+                    }
+                  ],
                   "Id": "28759south-servery2/2023",
                   "Rating": 0
                 },
                 {
                   "Name": "Sunday",
                   "Meals": [
-                    {
-                      "Name": "N/A",
-                      "Rating": 0,
-                      "Alergies": null
-                    },
                     {
                       "Name": "Roasted Potato Medley",
                       "Rating": 0,
@@ -23028,14 +24239,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "6360north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Tuesday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Vegetable stir Fry",
                       "Rating": 0,
@@ -23050,7 +24254,14 @@
                           "Name": "So"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "6360north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Tuesday",
+                  "Meals": [
                     {
                       "Name": "Chicken Biryani",
                       "Rating": 0,
@@ -23112,14 +24323,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "7699north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Wednesday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Stir Fry Vegetables",
                       "Rating": 0,
@@ -23131,7 +24335,14 @@
                           "Name": "So"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "7699north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Wednesday",
+                  "Meals": [
                     {
                       "Name": "Goan Style Shrimp",
                       "Rating": 0,
@@ -23206,14 +24417,7 @@
                           "Name": "M"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "8845north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Thursday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Korean Wings",
                       "Rating": 0,
@@ -23222,7 +24426,14 @@
                           "Name": "So"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "8845north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Thursday",
+                  "Meals": [
                     {
                       "Name": "Chicken Tikka",
                       "Rating": 0,
@@ -23290,14 +24501,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "10139north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Friday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Edamame",
                       "Rating": 0,
@@ -23309,7 +24513,14 @@
                           "Name": "So"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "10139north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Friday",
+                  "Meals": [
                     {
                       "Name": "Tandoori Chicken",
                       "Rating": 0,
@@ -23377,14 +24588,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "11366north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Saturday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Miso Soup",
                       "Rating": 0,
@@ -23398,11 +24602,11 @@
                       ]
                     }
                   ],
-                  "Id": "12610north-servery2/2023",
+                  "Id": "11366north-servery2/2023",
                   "Rating": 0
                 },
                 {
-                  "Name": "Sunday",
+                  "Name": "Saturday",
                   "Meals": [
                     {
                       "Name": "N/A",
@@ -23410,6 +24614,12 @@
                       "Alergies": null
                     }
                   ],
+                  "Id": "12610north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Sunday",
+                  "Meals": null,
                   "Id": "12854north-servery2/2023",
                   "Rating": 0
                 }
@@ -23503,14 +24713,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "19881north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Tuesday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Spicy Green Beans",
                       "Rating": 0,
@@ -23522,7 +24725,14 @@
                           "Name": "So"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "19881north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Tuesday",
+                  "Meals": [
                     {
                       "Name": "Pork Adobado Tacos",
                       "Rating": 0,
@@ -23584,14 +24794,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "21289north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Wednesday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Gai Lan",
                       "Rating": 0,
@@ -23603,7 +24806,14 @@
                           "Name": "So"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "21289north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Wednesday",
+                  "Meals": [
                     {
                       "Name": "Chili Lime Chicken",
                       "Rating": 0,
@@ -23665,14 +24875,7 @@
                           "Name": "Sh"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "22433north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Thursday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Taiwan Cabbage",
                       "Rating": 0,
@@ -23684,7 +24887,14 @@
                           "Name": "So"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "22433north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Thursday",
+                  "Meals": [
                     {
                       "Name": "Mojo Pork Chop",
                       "Rating": 0,
@@ -23745,14 +24955,7 @@
                       "Name": "Pepper Chicken",
                       "Rating": 0,
                       "Alergies": null
-                    }
-                  ],
-                  "Id": "23587north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Friday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Bok Choy",
                       "Rating": 0,
@@ -23764,7 +24967,14 @@
                           "Name": "So"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "23587north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Friday",
+                  "Meals": [
                     {
                       "Name": "Fish Vera Cruz",
                       "Rating": 0,
@@ -23827,14 +25037,7 @@
                           "Name": "E"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "24727north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Saturday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Mac \u0026 Cheese",
                       "Rating": 0,
@@ -23854,17 +25057,24 @@
                       ]
                     }
                   ],
+                  "Id": "24727north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Saturday",
+                  "Meals": [
+                    {
+                      "Name": "N/A",
+                      "Rating": 0,
+                      "Alergies": null
+                    }
+                  ],
                   "Id": "25977north-servery2/2023",
                   "Rating": 0
                 },
                 {
                   "Name": "Sunday",
                   "Meals": [
-                    {
-                      "Name": "N/A",
-                      "Rating": 0,
-                      "Alergies": null
-                    },
                     {
                       "Name": "N/A",
                       "Rating": 0,
@@ -23946,14 +25156,7 @@
                           "Name": "M"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "6359baker-kitchen2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Tuesday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Mini Chicken Corn Dogs at the Grill",
                       "Rating": 0,
@@ -23971,7 +25174,14 @@
                           "Name": "E"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "6359baker-kitchen2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Tuesday",
+                  "Meals": [
                     {
                       "Name": "Guajillo Rice Pilaf",
                       "Rating": 0,
@@ -24011,14 +25221,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "7695baker-kitchen2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Wednesday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Chips \u0026 Queso at the Grill",
                       "Rating": 0,
@@ -24033,7 +25236,14 @@
                           "Name": "M"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "7695baker-kitchen2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Wednesday",
+                  "Meals": [
                     {
                       "Name": "Greek Style Couscous \u0026 Quinoa with Feta Cheese",
                       "Rating": 0,
@@ -24086,14 +25296,7 @@
                           "Name": "Veg"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "8662baker-kitchen2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Thursday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Chicken Meatball Marinara Sub Sandwich at the Grill",
                       "Rating": 0,
@@ -24108,7 +25311,14 @@
                           "Name": "M"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "8662baker-kitchen2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Thursday",
+                  "Meals": [
                     {
                       "Name": "Steamed Jasmine Rice",
                       "Rating": 0,
@@ -24165,6 +25375,11 @@
                           "Name": "So"
                         }
                       ]
+                    },
+                    {
+                      "Name": "",
+                      "Rating": 0,
+                      "Alergies": null
                     }
                   ],
                   "Id": "9957baker-kitchen2/2023",
@@ -24229,14 +25444,7 @@
                           "Name": "Veg"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "11032baker-kitchen2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Saturday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Tortilla Chips \u0026 Salsa Fresca at the Grill",
                       "Rating": 0,
@@ -24250,11 +25458,11 @@
                       ]
                     }
                   ],
-                  "Id": "12268baker-kitchen2/2023",
+                  "Id": "11032baker-kitchen2/2023",
                   "Rating": 0
                 },
                 {
-                  "Name": "Sunday",
+                  "Name": "Saturday",
                   "Meals": [
                     {
                       "Name": "N/A",
@@ -24262,6 +25470,12 @@
                       "Alergies": null
                     }
                   ],
+                  "Id": "12268baker-kitchen2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Sunday",
+                  "Meals": null,
                   "Id": "12512baker-kitchen2/2023",
                   "Rating": 0
                 }
@@ -24333,14 +25547,7 @@
                           "Name": "E"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "19538baker-kitchen2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Tuesday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Ranchero Beans with Plant-based Sausage",
                       "Rating": 0,
@@ -24355,7 +25562,14 @@
                           "Name": "So"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "19538baker-kitchen2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Tuesday",
+                  "Meals": [
                     {
                       "Name": "Creamy Macaroni \u0026 Cheese",
                       "Rating": 0,
@@ -24396,14 +25610,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "20844baker-kitchen2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Wednesday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Balsamic Roasted Tofu \u0026 Eggplant",
                       "Rating": 0,
@@ -24415,7 +25622,14 @@
                           "Name": "So"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "20844baker-kitchen2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Wednesday",
+                  "Meals": [
                     {
                       "Name": "Garlic Chive Mashed Potatoes",
                       "Rating": 0,
@@ -24490,14 +25704,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "21849baker-kitchen2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Thursday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Spicy Dorito Chili Cheese Dog at the Grill",
                       "Rating": 0,
@@ -24512,7 +25719,14 @@
                           "Name": "M"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "21849baker-kitchen2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Thursday",
+                  "Meals": [
                     {
                       "Name": "Plant-based Dirty Rice Pilaf",
                       "Rating": 0,
@@ -24565,6 +25779,15 @@
                           "Name": "E"
                         }
                       ]
+                    },
+                    {
+                      "Name": "Roasted Carrot \u0026 Lentil Ragout",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
                     }
                   ],
                   "Id": "23443baker-kitchen2/2023",
@@ -24574,13 +25797,9 @@
                   "Name": "Friday",
                   "Meals": [
                     {
-                      "Name": "Roasted Carrot \u0026 Lentil Ragout",
+                      "Name": "N/A",
                       "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
+                      "Alergies": null
                     }
                   ],
                   "Id": "24607baker-kitchen2/2023",
@@ -24605,1225 +25824,9 @@
                       "Name": "N/A",
                       "Rating": 0,
                       "Alergies": null
-                    },
-                    {
-                      "Name": "N/A",
-                      "Rating": 0,
-                      "Alergies": null
                     }
                   ],
                   "Id": "25095baker-kitchen2/2023",
-                  "Rating": 0
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "Name": "west-servery",
-          "MealTimeGroups": [
-            {
-              "Name": "Lunch",
-              "MealDayGroups": [
-                {
-                  "Name": "Monday",
-                  "Meals": [
-                    {
-                      "Name": "Chicken \u0026 Dumplings",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Haricots Verts \u0026 Mushrooms",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Bratwurst Sausage with Sauerkraut",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Rice \u0026 Beans with Salsa",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Eggplant, Tomato \u0026 Potato Ragout",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "6359west-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Tuesday",
-                  "Meals": [
-                    {
-                      "Name": "Ginger Plum Glazed Tofu",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Philly Steak Sandwich",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Seasoned Steak Fries",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Golden Fried Catfish with Tartar Sauce",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "E"
-                        },
-                        {
-                          "Name": "F"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Tofu with Artichokes \u0026 Sun-dried Tomatoes",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "7853west-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Wednesday",
-                  "Meals": [
-                    {
-                      "Name": "Baked Pasta",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Mexican Beef Lasagna",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Fiesta Corn Rice",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Chicken in Spanish Sauce",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Black Beans \u0026 Roasted Plantains",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Curried Lentils",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "9188west-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Thursday",
-                  "Meals": [
-                    {
-                      "Name": "Tofu Potato Masala",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Steamed Rice",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Chicken Red Curry",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Sweet \u0026 Sour Beef Meatballs",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Creamy Potato Togurt Curry",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "10603west-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Friday",
-                  "Meals": [
-                    {
-                      "Name": "Plant-based Picadillo",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Herb Roasted Potatoes",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Greek Chicken",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Fish Gratinata",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "F"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Pasta Pesto",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Tofu Mango Rice",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "11811west-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Saturday",
-                  "Meals": [
-                    {
-                      "Name": "Plant-based Meatballs in Chipotle Tomato Sauce",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Macaroni \u0026 Cheese",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Buffalo Chicken Wings",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Smoked Pork Sausage on a Stick",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Barbecue Beans",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "13370west-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Sunday",
-                  "Meals": [
-                    {
-                      "Name": "Ricotta Stuffed Shells with Marinara",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Pasta Marinara",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Italian Pork Sausage",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Chicken Alfredo",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Mini Pesto Pizzas",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "14743west-servery2/2023",
-                  "Rating": 0
-                }
-              ]
-            },
-            {
-              "Name": "Dinner",
-              "MealDayGroups": [
-                {
-                  "Name": "Monday",
-                  "Meals": [
-                    {
-                      "Name": "Red Quinoa with Kidney Beans",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Garlic Mashed Potatoes",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Chicken Fried Chicken",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Bratwurst Sausage with Sauerkraut",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Tofu Fried Rice",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "22775west-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Tuesday",
-                  "Meals": [
-                    {
-                      "Name": "Garbanzo Curry",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Jasmine Rice",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Chicken Teriyaki",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Chili Garlic Braised Pork Shoulder",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Sesame Soy Ginger Noodle Bowl",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "24031west-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Wednesday",
-                  "Meals": [
-                    {
-                      "Name": "Tofu Stir-fry",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Pasta with Garlic Herb Oil",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Chicken \u0026 Beef Meatballs in Marinara (Halal)",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Sautéed Fish with Lemon Caper Vinaigrette",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "F"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Zucchini, Shredded Tofu Tomato Ragout",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "25139west-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Thursday",
-                  "Meals": [
-                    {
-                      "Name": "Ricotta Spinach Dumplings",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Mexican Rice Pilaf",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Beef Fajitas",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Chicken in Ancho Cream",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Black Beans",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "26664west-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Friday",
-                  "Meals": [
-                    {
-                      "Name": "Southwest Cheddar Potato Casserole",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Steamed Rice",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Lemon Pepper Fish",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "F"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Honey Sriracha Chicken",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Ricotta Baked Pasta",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "27916west-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Saturday",
-                  "Meals": [
-                    {
-                      "Name": "Orange Glazed Tofu",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Turmeric Rice",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Coconut Tomato Curry Chicken",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Fish Veracruz",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "F"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Potato Chickpea Curry",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "29205west-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Sunday",
-                  "Meals": [
-                    {
-                      "Name": "Tortellini Pesto",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Garlic Roasted Potatoes",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Roast Pork Loin with Honey Mustard Caper Vinaigrette",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Barbecue Chickeni Drumsticks",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Broccoli Cheddar Rice",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Baked Beans",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "30450west-servery2/2023",
                   "Rating": 0
                 }
               ]
@@ -25910,14 +25913,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "6375seibel-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Tuesday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Mushroom Creamy Risotto",
                       "Rating": 0,
@@ -25932,7 +25928,14 @@
                           "Name": "M"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "6375seibel-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Tuesday",
+                  "Meals": [
                     {
                       "Name": "Moroccan Rice Pilaf",
                       "Rating": 0,
@@ -25995,14 +25998,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "7797seibel-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Wednesday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Cheese Ravioli with Marinara",
                       "Rating": 0,
@@ -26023,7 +26019,14 @@
                           "Name": "E"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "7797seibel-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Wednesday",
+                  "Meals": [
                     {
                       "Name": "Steak Fries",
                       "Rating": 0,
@@ -26101,14 +26104,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "9176seibel-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Thursday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Tortellini Pesto",
                       "Rating": 0,
@@ -26129,7 +26125,14 @@
                           "Name": "E"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "9176seibel-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Thursday",
+                  "Meals": [
                     {
                       "Name": "Basmati Rice",
                       "Rating": 0,
@@ -26191,14 +26194,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "10806seibel-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Friday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Cheese Manicotti",
                       "Rating": 0,
@@ -26219,7 +26215,14 @@
                           "Name": "E"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "10806seibel-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Friday",
+                  "Meals": [
                     {
                       "Name": "Pasta Pesto",
                       "Rating": 0,
@@ -26297,14 +26300,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "12169seibel-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Saturday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Plant-based Shepherd\\\\\\'s Pie",
                       "Rating": 0,
@@ -26319,7 +26315,14 @@
                           "Name": "So"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "12169seibel-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Saturday",
+                  "Meals": [
                     {
                       "Name": "Macaroni \u0026 Cheese",
                       "Rating": 0,
@@ -26388,14 +26391,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "13702seibel-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Sunday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Ricotta Stuffed Shells",
                       "Rating": 0,
@@ -26416,7 +26412,14 @@
                           "Name": "E"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "13702seibel-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Sunday",
+                  "Meals": [
                     {
                       "Name": "Redskin Potatoes with Peppers \u0026 Onions",
                       "Rating": 0,
@@ -26562,14 +26565,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "23345seibel-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Tuesday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Southwest Cheddar Potatoes",
                       "Rating": 0,
@@ -26584,7 +26580,14 @@
                           "Name": "M"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "23345seibel-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Tuesday",
+                  "Meals": [
                     {
                       "Name": "Jasmine Rice",
                       "Rating": 0,
@@ -26644,14 +26647,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "24465seibel-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Wednesday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Creamy Mushroom Kale Pasta",
                       "Rating": 0,
@@ -26669,7 +26665,14 @@
                           "Name": "M"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "24465seibel-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Wednesday",
+                  "Meals": [
                     {
                       "Name": "Steamed Rice",
                       "Rating": 0,
@@ -26729,14 +26732,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "25762seibel-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Thursday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Gnocchi with Creamy Red Pepper Sauce",
                       "Rating": 0,
@@ -26757,7 +26753,14 @@
                           "Name": "E"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "25762seibel-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Thursday",
+                  "Meals": [
                     {
                       "Name": "Yukon Gold Potatoes",
                       "Rating": 0,
@@ -26817,14 +26820,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "27117seibel-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Friday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Ricotta Vegetable Stuffed Pastry Streudel",
                       "Rating": 0,
@@ -26845,7 +26841,14 @@
                           "Name": "E"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "27117seibel-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Friday",
+                  "Meals": [
                     {
                       "Name": "Herb Garlic Pasta",
                       "Rating": 0,
@@ -26908,14 +26911,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "28518seibel-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Saturday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Baked Pasta Florentine",
                       "Rating": 0,
@@ -26933,7 +26929,14 @@
                           "Name": "M"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "28518seibel-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Saturday",
+                  "Meals": [
                     {
                       "Name": "Turmeric Rice",
                       "Rating": 0,
@@ -26993,14 +26996,7 @@
                           "Name": "So"
                         }
                       ]
-                    }
-                  ],
-                  "Id": "29844seibel-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Sunday",
-                  "Meals": [
+                    },
                     {
                       "Name": "Creamy Pasta Pesto",
                       "Rating": 0,
@@ -27018,7 +27014,14 @@
                           "Name": "M"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "Id": "29844seibel-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Sunday",
+                  "Meals": [
                     {
                       "Name": "Garlic Mashed Potatoes",
                       "Rating": 0,

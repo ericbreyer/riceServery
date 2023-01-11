@@ -233,6 +233,8 @@ func getServeryData(Servery string) (serveryGroup, error) {
 			currentMealTimeBlock = mealTimeGroup{Name: block.Text}
 		case day:
 			if currentMealDayBlock.Name != "" {
+				currentMealDayBlock.Meals = append(currentMealDayBlock.Meals, currentFoodBlock)
+				currentFoodBlock = meal{}
 				currentMealTimeBlock.MealDayGroups = append(currentMealTimeBlock.MealDayGroups, currentMealDayBlock)
 			}
 
