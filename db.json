@@ -21855,6 +21855,751 @@
       "Date": "2023January11",
       "Serveries": [
         {
+          "Name": "baker-kitchen",
+          "MealTimeGroups": [
+            {
+              "Name": "Lunch",
+              "MealDayGroups": [
+                {
+                  "Name": "Monday",
+                  "Meals": [
+                    {
+                      "Name": "Steamed Mint Basmati Rice",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Simmered Butter Chicken",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Baked Swai Fillets with Cilantro Sesame Pineapple Pico",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "F"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Plant-based Pesto Pasta \u0026 Paow",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Creamy Tomato Basil Soup",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Mini Chicken Corn Dogs at the Grill",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "6359baker-kitchen2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Tuesday",
+                  "Meals": [
+                    {
+                      "Name": "Guajillo Rice Pilaf",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Refried Black Beans",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Smoked Shredded Beef Barbacoa",
+                      "Rating": 0,
+                      "Alergies": null
+                    },
+                    {
+                      "Name": "Classic Chicken Tinga",
+                      "Rating": 0,
+                      "Alergies": null
+                    },
+                    {
+                      "Name": "Smoked Tofu Cutlets with Warm Tomatillo Salsa",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Chips \u0026 Queso at the Grill",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "7695baker-kitchen2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Wednesday",
+                  "Meals": [
+                    {
+                      "Name": "Greek Style Couscous \u0026 Quinoa with Feta Cheese",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Sicilian Style Savory Pork Stew with Bacon Sage Relish",
+                      "Rating": 0,
+                      "Alergies": null
+                    },
+                    {
+                      "Name": "Mediterranean Chicken Thighs with Roasted Grape Tomatoes",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Garbanzo \u0026 PAOW Tomato Curry with Steamed Rice",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Slow Simmered Italian White Bean Ragout",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Chicken Meatball Marinara Sub Sandwich at the Grill",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "8662baker-kitchen2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Thursday",
+                  "Meals": [
+                    {
+                      "Name": "Steamed Jasmine Rice",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Korean Style Beef Bulgogi (Sesame)",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Sweet \u0026 Sour Glazed Chicken",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Momo Soup Dumplings in Vegetable Broth",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Roasted Tempeh, Stir Fried Veggies \u0026 Chow Mein Noodles",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "",
+                      "Rating": 0,
+                      "Alergies": null
+                    }
+                  ],
+                  "Id": "9957baker-kitchen2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Friday",
+                  "Meals": [
+                    {
+                      "Name": "Garlic \u0026 Herb Roasted Baby Potatoes",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Chicken Fried Steaks with Pepper Gravy",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Baked Chicken Breast with Italian Herb Vinaigrette",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Plant-based Sausage \u0026 Roasted Sweet Potatoes",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Black Bean Mexican Jambalaya",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Tortilla Chips \u0026 Salsa Fresca at the Grill",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "11032baker-kitchen2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Saturday",
+                  "Meals": [
+                    {
+                      "Name": "N/A",
+                      "Rating": 0,
+                      "Alergies": null
+                    }
+                  ],
+                  "Id": "12268baker-kitchen2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Sunday",
+                  "Meals": null,
+                  "Id": "12512baker-kitchen2/2023",
+                  "Rating": 0
+                }
+              ]
+            },
+            {
+              "Name": "Dinner",
+              "MealDayGroups": [
+                {
+                  "Name": "Monday",
+                  "Meals": [
+                    {
+                      "Name": "N/A",
+                      "Rating": 0,
+                      "Alergies": null
+                    },
+                    {
+                      "Name": "Roasted Red Potatoes with Peppers \u0026 Onions",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Creole Barbecue Chicken Legs",
+                      "Rating": 0,
+                      "Alergies": null
+                    },
+                    {
+                      "Name": "Baked Tortilla Crusted Tilapia with Avocado Crema",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        },
+                        {
+                          "Name": "F"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Cheese Stuffed Pasta Shells in Spicy Marinara",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Ranchero Beans with Plant-based Sausage",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "19538baker-kitchen2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Tuesday",
+                  "Meals": [
+                    {
+                      "Name": "Creamy Macaroni \u0026 Cheese",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Cajun Style Barbecue Baked Beans",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Smoked Sweet Italian Sausage with Peppers \u0026 Onions",
+                      "Rating": 0,
+                      "Alergies": null
+                    },
+                    {
+                      "Name": "Roasted Chicken Breast with Cilantro Basil Vinaigrette",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Balsamic Roasted Tofu \u0026 Eggplant",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "20844baker-kitchen2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Wednesday",
+                  "Meals": [
+                    {
+                      "Name": "Garlic Chive Mashed Potatoes",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Salisbury Steaks with Mushroom Demi Glace",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Caribbean Smoked Catfish Fillets with Fresh Mango Pico",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "F"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Cheese Ravioli in Smoked Gouda Cream Sauce",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Black Beans \u0026 Plantains with Roasted PAOW",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Spicy Dorito Chili Cheese Dog at the Grill",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "21849baker-kitchen2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Thursday",
+                  "Meals": [
+                    {
+                      "Name": "Plant-based Dirty Rice Pilaf",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Smoked Pork Tenderloin with Orange Ginger Chimichurri",
+                      "Rating": 0,
+                      "Alergies": null
+                    },
+                    {
+                      "Name": "Blackened Tilapia Fillets with Fire Roasted Corn Relish",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "F"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Cheese Tortellini Tossed in Kale Pesto",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Roasted Carrot \u0026 Lentil Ragout",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "23443baker-kitchen2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Friday",
+                  "Meals": [
+                    {
+                      "Name": "N/A",
+                      "Rating": 0,
+                      "Alergies": null
+                    }
+                  ],
+                  "Id": "24607baker-kitchen2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Saturday",
+                  "Meals": [
+                    {
+                      "Name": "N/A",
+                      "Rating": 0,
+                      "Alergies": null
+                    }
+                  ],
+                  "Id": "24850baker-kitchen2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Sunday",
+                  "Meals": [
+                    {
+                      "Name": "N/A",
+                      "Rating": 0,
+                      "Alergies": null
+                    }
+                  ],
+                  "Id": "25095baker-kitchen2/2023",
+                  "Rating": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
           "Name": "north-servery",
           "MealTimeGroups": [
             {
@@ -25082,751 +25827,6 @@
                     }
                   ],
                   "Id": "29004south-servery2/2023",
-                  "Rating": 0
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "Name": "baker-kitchen",
-          "MealTimeGroups": [
-            {
-              "Name": "Lunch",
-              "MealDayGroups": [
-                {
-                  "Name": "Monday",
-                  "Meals": [
-                    {
-                      "Name": "Steamed Mint Basmati Rice",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Simmered Butter Chicken",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Baked Swai Fillets with Cilantro Sesame Pineapple Pico",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "F"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Plant-based Pesto Pasta \u0026 Paow",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Creamy Tomato Basil Soup",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Mini Chicken Corn Dogs at the Grill",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "6359baker-kitchen2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Tuesday",
-                  "Meals": [
-                    {
-                      "Name": "Guajillo Rice Pilaf",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Refried Black Beans",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Smoked Shredded Beef Barbacoa",
-                      "Rating": 0,
-                      "Alergies": null
-                    },
-                    {
-                      "Name": "Classic Chicken Tinga",
-                      "Rating": 0,
-                      "Alergies": null
-                    },
-                    {
-                      "Name": "Smoked Tofu Cutlets with Warm Tomatillo Salsa",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Chips \u0026 Queso at the Grill",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "7695baker-kitchen2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Wednesday",
-                  "Meals": [
-                    {
-                      "Name": "Greek Style Couscous \u0026 Quinoa with Feta Cheese",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Sicilian Style Savory Pork Stew with Bacon Sage Relish",
-                      "Rating": 0,
-                      "Alergies": null
-                    },
-                    {
-                      "Name": "Mediterranean Chicken Thighs with Roasted Grape Tomatoes",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Garbanzo \u0026 PAOW Tomato Curry with Steamed Rice",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Slow Simmered Italian White Bean Ragout",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Chicken Meatball Marinara Sub Sandwich at the Grill",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "8662baker-kitchen2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Thursday",
-                  "Meals": [
-                    {
-                      "Name": "Steamed Jasmine Rice",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Korean Style Beef Bulgogi (Sesame)",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Sweet \u0026 Sour Glazed Chicken",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Momo Soup Dumplings in Vegetable Broth",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Roasted Tempeh, Stir Fried Veggies \u0026 Chow Mein Noodles",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "",
-                      "Rating": 0,
-                      "Alergies": null
-                    }
-                  ],
-                  "Id": "9957baker-kitchen2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Friday",
-                  "Meals": [
-                    {
-                      "Name": "Garlic \u0026 Herb Roasted Baby Potatoes",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Chicken Fried Steaks with Pepper Gravy",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Baked Chicken Breast with Italian Herb Vinaigrette",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Plant-based Sausage \u0026 Roasted Sweet Potatoes",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Black Bean Mexican Jambalaya",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Tortilla Chips \u0026 Salsa Fresca at the Grill",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "11032baker-kitchen2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Saturday",
-                  "Meals": [
-                    {
-                      "Name": "N/A",
-                      "Rating": 0,
-                      "Alergies": null
-                    }
-                  ],
-                  "Id": "12268baker-kitchen2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Sunday",
-                  "Meals": null,
-                  "Id": "12512baker-kitchen2/2023",
-                  "Rating": 0
-                }
-              ]
-            },
-            {
-              "Name": "Dinner",
-              "MealDayGroups": [
-                {
-                  "Name": "Monday",
-                  "Meals": [
-                    {
-                      "Name": "N/A",
-                      "Rating": 0,
-                      "Alergies": null
-                    },
-                    {
-                      "Name": "Roasted Red Potatoes with Peppers \u0026 Onions",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Creole Barbecue Chicken Legs",
-                      "Rating": 0,
-                      "Alergies": null
-                    },
-                    {
-                      "Name": "Baked Tortilla Crusted Tilapia with Avocado Crema",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        },
-                        {
-                          "Name": "F"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Cheese Stuffed Pasta Shells in Spicy Marinara",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Ranchero Beans with Plant-based Sausage",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "19538baker-kitchen2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Tuesday",
-                  "Meals": [
-                    {
-                      "Name": "Creamy Macaroni \u0026 Cheese",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Cajun Style Barbecue Baked Beans",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Smoked Sweet Italian Sausage with Peppers \u0026 Onions",
-                      "Rating": 0,
-                      "Alergies": null
-                    },
-                    {
-                      "Name": "Roasted Chicken Breast with Cilantro Basil Vinaigrette",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Balsamic Roasted Tofu \u0026 Eggplant",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "20844baker-kitchen2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Wednesday",
-                  "Meals": [
-                    {
-                      "Name": "Garlic Chive Mashed Potatoes",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Salisbury Steaks with Mushroom Demi Glace",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Caribbean Smoked Catfish Fillets with Fresh Mango Pico",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "F"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Cheese Ravioli in Smoked Gouda Cream Sauce",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Black Beans \u0026 Plantains with Roasted PAOW",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Spicy Dorito Chili Cheese Dog at the Grill",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "21849baker-kitchen2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Thursday",
-                  "Meals": [
-                    {
-                      "Name": "Plant-based Dirty Rice Pilaf",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Smoked Pork Tenderloin with Orange Ginger Chimichurri",
-                      "Rating": 0,
-                      "Alergies": null
-                    },
-                    {
-                      "Name": "Blackened Tilapia Fillets with Fire Roasted Corn Relish",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "F"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Cheese Tortellini Tossed in Kale Pesto",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Roasted Carrot \u0026 Lentil Ragout",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "23443baker-kitchen2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Friday",
-                  "Meals": [
-                    {
-                      "Name": "N/A",
-                      "Rating": 0,
-                      "Alergies": null
-                    }
-                  ],
-                  "Id": "24607baker-kitchen2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Saturday",
-                  "Meals": [
-                    {
-                      "Name": "N/A",
-                      "Rating": 0,
-                      "Alergies": null
-                    }
-                  ],
-                  "Id": "24850baker-kitchen2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Sunday",
-                  "Meals": [
-                    {
-                      "Name": "N/A",
-                      "Rating": 0,
-                      "Alergies": null
-                    }
-                  ],
-                  "Id": "25095baker-kitchen2/2023",
                   "Rating": 0
                 }
               ]
