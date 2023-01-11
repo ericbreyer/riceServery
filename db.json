@@ -21855,6 +21855,934 @@
       "Date": "2023January11",
       "Serveries": [
         {
+          "Name": "north-servery",
+          "MealTimeGroups": [
+            {
+              "Name": "Lunch",
+              "MealDayGroups": [
+                {
+                  "Name": "Monday",
+                  "Meals": [
+                    {
+                      "Name": "Lamb Tagine",
+                      "Rating": 0,
+                      "Alergies": null
+                    },
+                    {
+                      "Name": "Cous Cous",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Dal",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Chicken Alfredo Pasta",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Cheese Quesadilla",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Chicken Teriyaki",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Vegetable stir Fry",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "6360north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Tuesday",
+                  "Meals": [
+                    {
+                      "Name": "Chicken Biryani",
+                      "Rating": 0,
+                      "Alergies": null
+                    },
+                    {
+                      "Name": "Falafel",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Basmati Rice",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Spaghetti Bolognese",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Philly Beef Sliders",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Chicken Adobo",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Stir Fry Vegetables",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "7699north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Wednesday",
+                  "Meals": [
+                    {
+                      "Name": "Goan Style Shrimp",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Sh"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Tofu Aloo Gobi",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Dal",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Spaghetti Carbonara",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Chicken Sopes",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Asian Street Corn",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Korean Wings",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "8845north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Thursday",
+                  "Meals": [
+                    {
+                      "Name": "Chicken Tikka",
+                      "Rating": 0,
+                      "Alergies": null
+                    },
+                    {
+                      "Name": "Okra Curry",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Dal",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Pasta Pomodoro",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Ham \u0026 Cheese Crossaint",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Sweet \u0026 Sour Pork",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Edamame",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "10139north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Friday",
+                  "Meals": [
+                    {
+                      "Name": "Tandoori Chicken",
+                      "Rating": 0,
+                      "Alergies": null
+                    },
+                    {
+                      "Name": "Spinach Paneer",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Steamed Vegetables",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Shrimp Pasta",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "Sh"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Fish \u0026 Chips",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "E"
+                        },
+                        {
+                          "Name": "F"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Mongolian Beef",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Miso Soup",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "11366north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Saturday",
+                  "Meals": [
+                    {
+                      "Name": "N/A",
+                      "Rating": 0,
+                      "Alergies": null
+                    }
+                  ],
+                  "Id": "12610north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Sunday",
+                  "Meals": null,
+                  "Id": "12854north-servery2/2023",
+                  "Rating": 0
+                }
+              ]
+            },
+            {
+              "Name": "Dinner",
+              "MealDayGroups": [
+                {
+                  "Name": "Monday",
+                  "Meals": [
+                    {
+                      "Name": "N/A",
+                      "Rating": 0,
+                      "Alergies": null
+                    },
+                    {
+                      "Name": "Beef Enchilada",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Creamy Polenta",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Roasted Calabacita",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Pasta Bar",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Grilled Cheese and Tomato Soup",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Mapo Tofu",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Spicy Green Beans",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "19881north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Tuesday",
+                  "Meals": [
+                    {
+                      "Name": "Pork Adobado Tacos",
+                      "Rating": 0,
+                      "Alergies": null
+                    },
+                    {
+                      "Name": "Nopales Tacos",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Charro Beans",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Fried Cauliflower",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Crispy Chicken Sandwich",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Szechuan Pork",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Gai Lan",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "21289north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Wednesday",
+                  "Meals": [
+                    {
+                      "Name": "Chili Lime Chicken",
+                      "Rating": 0,
+                      "Alergies": null
+                    },
+                    {
+                      "Name": "Spicy Tofu Scramble",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Paella Rice",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Penne Arabiata",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Bulgogi Fries",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Shrimp and Egg",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "E"
+                        },
+                        {
+                          "Name": "Sh"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Taiwan Cabbage",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "22433north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Thursday",
+                  "Meals": [
+                    {
+                      "Name": "Mojo Pork Chop",
+                      "Rating": 0,
+                      "Alergies": null
+                    },
+                    {
+                      "Name": "Orange Mojo Tofu",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Patatas bravas",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Spicy Corn Dog",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Pasta Marinara",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "G"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Pepper Chicken",
+                      "Rating": 0,
+                      "Alergies": null
+                    },
+                    {
+                      "Name": "Bok Choy",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        },
+                        {
+                          "Name": "So"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "23587north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Friday",
+                  "Meals": [
+                    {
+                      "Name": "Fish Vera Cruz",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "F"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Roasted Eggplant",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Cuban Black Beans",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Rice pilaf",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Steamed Vegetables",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "Veg"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Chicken \u0026 Waffles",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        },
+                        {
+                          "Name": "E"
+                        }
+                      ]
+                    },
+                    {
+                      "Name": "Mac \u0026 Cheese",
+                      "Rating": 0,
+                      "Alergies": [
+                        {
+                          "Name": "V"
+                        },
+                        {
+                          "Name": "G"
+                        },
+                        {
+                          "Name": "So"
+                        },
+                        {
+                          "Name": "M"
+                        }
+                      ]
+                    }
+                  ],
+                  "Id": "24727north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Saturday",
+                  "Meals": [
+                    {
+                      "Name": "N/A",
+                      "Rating": 0,
+                      "Alergies": null
+                    }
+                  ],
+                  "Id": "25977north-servery2/2023",
+                  "Rating": 0
+                },
+                {
+                  "Name": "Sunday",
+                  "Meals": [
+                    {
+                      "Name": "N/A",
+                      "Rating": 0,
+                      "Alergies": null
+                    }
+                  ],
+                  "Id": "26222north-servery2/2023",
+                  "Rating": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
           "Name": "west-servery",
           "MealTimeGroups": [
             {
@@ -24154,934 +25082,6 @@
                     }
                   ],
                   "Id": "29004south-servery2/2023",
-                  "Rating": 0
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "Name": "north-servery",
-          "MealTimeGroups": [
-            {
-              "Name": "Lunch",
-              "MealDayGroups": [
-                {
-                  "Name": "Monday",
-                  "Meals": [
-                    {
-                      "Name": "Lamb Tagine",
-                      "Rating": 0,
-                      "Alergies": null
-                    },
-                    {
-                      "Name": "Cous Cous",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Dal",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Chicken Alfredo Pasta",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Cheese Quesadilla",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Chicken Teriyaki",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Vegetable stir Fry",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "6360north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Tuesday",
-                  "Meals": [
-                    {
-                      "Name": "Chicken Biryani",
-                      "Rating": 0,
-                      "Alergies": null
-                    },
-                    {
-                      "Name": "Falafel",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Basmati Rice",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Spaghetti Bolognese",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Philly Beef Sliders",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Chicken Adobo",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Stir Fry Vegetables",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "7699north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Wednesday",
-                  "Meals": [
-                    {
-                      "Name": "Goan Style Shrimp",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Sh"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Tofu Aloo Gobi",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Dal",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Spaghetti Carbonara",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Chicken Sopes",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Asian Street Corn",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Korean Wings",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "8845north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Thursday",
-                  "Meals": [
-                    {
-                      "Name": "Chicken Tikka",
-                      "Rating": 0,
-                      "Alergies": null
-                    },
-                    {
-                      "Name": "Okra Curry",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Dal",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Pasta Pomodoro",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Ham \u0026 Cheese Crossaint",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Sweet \u0026 Sour Pork",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Edamame",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "10139north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Friday",
-                  "Meals": [
-                    {
-                      "Name": "Tandoori Chicken",
-                      "Rating": 0,
-                      "Alergies": null
-                    },
-                    {
-                      "Name": "Spinach Paneer",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Steamed Vegetables",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Shrimp Pasta",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "Sh"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Fish \u0026 Chips",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "E"
-                        },
-                        {
-                          "Name": "F"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Mongolian Beef",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Miso Soup",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "11366north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Saturday",
-                  "Meals": [
-                    {
-                      "Name": "N/A",
-                      "Rating": 0,
-                      "Alergies": null
-                    }
-                  ],
-                  "Id": "12610north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Sunday",
-                  "Meals": null,
-                  "Id": "12854north-servery2/2023",
-                  "Rating": 0
-                }
-              ]
-            },
-            {
-              "Name": "Dinner",
-              "MealDayGroups": [
-                {
-                  "Name": "Monday",
-                  "Meals": [
-                    {
-                      "Name": "N/A",
-                      "Rating": 0,
-                      "Alergies": null
-                    },
-                    {
-                      "Name": "Beef Enchilada",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Creamy Polenta",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Roasted Calabacita",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Pasta Bar",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Grilled Cheese and Tomato Soup",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Mapo Tofu",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Spicy Green Beans",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "19881north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Tuesday",
-                  "Meals": [
-                    {
-                      "Name": "Pork Adobado Tacos",
-                      "Rating": 0,
-                      "Alergies": null
-                    },
-                    {
-                      "Name": "Nopales Tacos",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Charro Beans",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Fried Cauliflower",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Crispy Chicken Sandwich",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Szechuan Pork",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Gai Lan",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "21289north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Wednesday",
-                  "Meals": [
-                    {
-                      "Name": "Chili Lime Chicken",
-                      "Rating": 0,
-                      "Alergies": null
-                    },
-                    {
-                      "Name": "Spicy Tofu Scramble",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Paella Rice",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Penne Arabiata",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Bulgogi Fries",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Shrimp and Egg",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "E"
-                        },
-                        {
-                          "Name": "Sh"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Taiwan Cabbage",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "22433north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Thursday",
-                  "Meals": [
-                    {
-                      "Name": "Mojo Pork Chop",
-                      "Rating": 0,
-                      "Alergies": null
-                    },
-                    {
-                      "Name": "Orange Mojo Tofu",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Patatas bravas",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Spicy Corn Dog",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Pasta Marinara",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "G"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Pepper Chicken",
-                      "Rating": 0,
-                      "Alergies": null
-                    },
-                    {
-                      "Name": "Bok Choy",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        },
-                        {
-                          "Name": "So"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "23587north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Friday",
-                  "Meals": [
-                    {
-                      "Name": "Fish Vera Cruz",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "F"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Roasted Eggplant",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Cuban Black Beans",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Rice pilaf",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Steamed Vegetables",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "Veg"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Chicken \u0026 Waffles",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        },
-                        {
-                          "Name": "E"
-                        }
-                      ]
-                    },
-                    {
-                      "Name": "Mac \u0026 Cheese",
-                      "Rating": 0,
-                      "Alergies": [
-                        {
-                          "Name": "V"
-                        },
-                        {
-                          "Name": "G"
-                        },
-                        {
-                          "Name": "So"
-                        },
-                        {
-                          "Name": "M"
-                        }
-                      ]
-                    }
-                  ],
-                  "Id": "24727north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Saturday",
-                  "Meals": [
-                    {
-                      "Name": "N/A",
-                      "Rating": 0,
-                      "Alergies": null
-                    }
-                  ],
-                  "Id": "25977north-servery2/2023",
-                  "Rating": 0
-                },
-                {
-                  "Name": "Sunday",
-                  "Meals": [
-                    {
-                      "Name": "N/A",
-                      "Rating": 0,
-                      "Alergies": null
-                    }
-                  ],
-                  "Id": "26222north-servery2/2023",
                   "Rating": 0
                 }
               ]
