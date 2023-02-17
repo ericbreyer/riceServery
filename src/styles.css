@@ -329,7 +329,7 @@ input[type="radio"] {
 
     .optionsFlex {
         flex-direction: row;
-        gap: 10px;
+        gap: 4px;
     }
 
     .sidebarButton {
@@ -373,6 +373,13 @@ input[type="radio"] {
     .topBar button {
         font-size: .8rem;
     }
+    .allergyInfo li {
+        font-size: xx-small !important;
+    }
+    .allergyInfo li > span {
+        width: 3ch !important;
+    }
+    
   }
 
   #loading {
@@ -389,3 +396,12 @@ input[type="radio"] {
     font-style: italic;
     font-size: .75em;
   }
+
+.allergyInfo li {
+    font-size: smaller;
+}
+
+.allergyInfo li > span {
+    width: 5ch;
+    display: inline-block;
+}

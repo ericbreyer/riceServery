@@ -9,6 +9,7 @@ COPY . .
 # Build the outyet command inside the container.
 # (You may fetch or manage dependencies here,
 # either manually or with a tool like "godep".)
+# RUN go get github.com/ericbreyer/riceServery
 RUN go install github.com/ericbreyer/riceServery@latest
 RUN GOOS=linux go build -ldflags="-s -w" .
 

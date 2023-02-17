@@ -27,52 +27,67 @@
             <button class="about" onclick="location.href='./about/'">About</button>
             
         </div>
+            <div class="sidebar" v-bind:class="{inActive : !sidebarActive}">
+                <div class="sidebarButton" v-bind:class="{open : sidebarActive}" v-on:click="function(){sidebarActive = !sidebarActive; hidePopUp();}">
+                    <div class="sidebarButtonText" v-bind:class="{open : sidebarActive}"> > </div>
+                </div>
 
-        <div class="sidebar" v-bind:class="{inActive : !sidebarActive}">
-            <div class="sidebarButton" v-bind:class="{open : sidebarActive}" v-on:click="function(){sidebarActive = !sidebarActive; hidePopUp();}">
-                <div class="sidebarButtonText" v-bind:class="{open : sidebarActive}"> > </div>
+            <div class="optionsFlex">
+                <div>
+                <div>Filter Servery</div>
+                <div><input type="checkbox" id="baker-kitchen" value="baker-kitchen" v-model="serveryFilter">
+                <label for="baker-kitchen">Baker</label></div>
+                <div><input type="checkbox" id="north-servery" value="north-servery" v-model="serveryFilter">
+                <label for="north-servery">North</label></div>
+                <div><input type="checkbox" id="west-servery" value="west-servery" v-model="serveryFilter">
+                <label for="west-servery">West</label></div>
+                <div><input type="checkbox" id="seibel-servery" value="seibel-servery" v-model="serveryFilter">
+                <label for="seibel-servery">Seibel</label></div>
+                <div><input type="checkbox" id="south-servery" value="south-servery" v-model="serveryFilter">
+                <label for="south-servery">South</label></div>
+                </div>
+
+                <div>
+                <div>Filter Time</div>
+                <select v-model="timeFilter">
+                    <option>All</option>
+                    <option>Lunch</option>
+                    <option>Dinner</option>
+                </select>
+                </div>
+                <div>
+                <div>Filter Days</div>
+                <select v-model="daysFilter">
+                    <option>All</option>
+                    <option>Monday</option>
+                    <option>Tuesday</option>
+                    <option>Wednesday</option>
+                    <option>Thursday</option>
+                    <option>Friday</option>
+                    <option>Saturday</option>
+                    <option>Sunday</option>
+                </select>
+                </div>
+                <!--
+                <button v-on:click="currentDate">Go to today</button>
+                <button v-on:click="function(){ serveryFilter = []; timeFilter='All'; daysFilter='All'}">Clear Filters</button>
+                -->
+            
+            <div class="allergyInfo">
+                Allergy Info
+                <ul>
+                    <li><span class="allergy">E</span> eggs</li>
+                    <li><span class="allergy">F</span> fish</li>
+                    <li><span class="allergy">G</span> gluten</li>
+                    <li><span class="allergy">M</span> milk</li>
+                    <li><span class="allergy">P</span> peanuts</li>
+                    <li><span class="allergy">Sh</span> shellfish</li>
+                    <li><span class="allergy">So</span> soy</li>
+                    <li><span class="allergy">N</span> tree-nuts</li>
+                    <li><span class="allergy">Veg</span> vegan</li>
+                    <li><span class="allergy">V</span> vegetarian</li>
+                </ul>
             </div>
-
-        <div class="optionsFlex">
-        <div>
-        <div>Filter Servery</div>
-        <div><input type="checkbox" id="baker-kitchen" value="baker-kitchen" v-model="serveryFilter">
-        <label for="baker-kitchen">Baker</label></div>
-        <div><input type="checkbox" id="north-servery" value="north-servery" v-model="serveryFilter">
-        <label for="north-servery">North</label></div>
-        <div><input type="checkbox" id="west-servery" value="west-servery" v-model="serveryFilter">
-        <label for="west-servery">West</label></div>
-        <div><input type="checkbox" id="seibel-servery" value="seibel-servery" v-model="serveryFilter">
-        <label for="seibel-servery">Seibel</label></div>
-        <div><input type="checkbox" id="south-servery" value="south-servery" v-model="serveryFilter">
-        <label for="south-servery">South</label></div>
-        </div>
-
-        <div>
-        <div>Filter Time</div>
-        <select v-model="timeFilter">
-            <option>All</option>
-            <option>Lunch</option>
-            <option>Dinner</option>
-        </select>
-        </div>
-        <div>
-        <div>Filter Days</div>
-        <select v-model="daysFilter">
-            <option>All</option>
-            <option>Monday</option>
-            <option>Tuesday</option>
-            <option>Wednesday</option>
-            <option>Thursday</option>
-            <option>Friday</option>
-            <option>Saturday</option>
-            <option>Sunday</option>
-          </select>
-        </div>
-        <!--
-        <button v-on:click="currentDate">Go to today</button>
-        <button v-on:click="function(){ serveryFilter = []; timeFilter='All'; daysFilter='All'}">Clear Filters</button>
-        -->
         </div>
         </div>
 
