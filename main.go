@@ -38,6 +38,11 @@ type DataBlock struct {
 type serveryGroup struct {
 	Name           string
 	MealTimeGroups []mealTimeGroup
+	Chef           chefName
+}
+
+type chefName struct {
+	Name string
 }
 
 type mealTimeGroup struct {
@@ -155,6 +160,10 @@ func getServeryData(Servery string) (serveryGroup, error) {
 
 	rawData := make([]DataBlock, 0)
 
+	chefRegex, _ := regexp.Compile(`<span class=\\"chef-name\\">[^<]*`)
+	chefMatched, _ := getMatchesWithIndex(body, chefRegex)
+	chef := chefName{Name: string(chefMatched[0][26:])}
+
 	timeRegex, _ := regexp.Compile(`<span class=\\"meal-time[^>]*>[^<]*`)
 	timeMatched, timeMatchedIdx := getMatchesWithIndex(body, timeRegex)
 	for idx, slice := range timeMatched {
@@ -216,7 +225,7 @@ func getServeryData(Servery string) (serveryGroup, error) {
 		return rawData[i].Position < rawData[j].Position
 	})
 
-	data := serveryGroup{Name: Servery}
+	data := serveryGroup{Name: Servery, Chef: chef}
 	var currentMealTimeBlock mealTimeGroup
 	var currentMealDayBlock mealDayGroup
 	var currentFoodBlock meal

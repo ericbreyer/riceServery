@@ -118,7 +118,7 @@
         <div v-bind:class="[(daysFilter == 'All') ? 'serveryFlex' : 'serveryFlexRow']">
         <!--<div class="servery" v-for="servery in text" v-if="(serveyFilter == JSON.parse(servery).Name || serveyFilter == 'All')">-->
         <div class="servery" v-for="servery in text.sort(function(a,b) {return ((JSON.parse(a).Name.toUpperCase() > JSON.parse(b).Name.toUpperCase()) ? 1 : -1)})" v-if="serveryFilter.includes(JSON.parse(servery).Name) || serveryFilter.length == 0">
-            <span class="sticky">{{JSON.parse(servery).Name.replaceAll("-"," ").toUpperCase()}}</span>
+            <span class="sticky"><span class="chef">{{JSON.parse(servery).Chef.Name}} presents</span><br>{{JSON.parse(servery).Name.replaceAll("-"," ").toUpperCase()}}</span>
             <div class="timeFlex">
             <div class="time" v-for="time in JSON.parse(servery).MealTimeGroups" v-if="(timeFilter == time.Name || timeFilter == 'All')">
                 

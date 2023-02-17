@@ -66,6 +66,10 @@ body {
     font-size: xx-large;
     font-weight: bolder;
 }
+
+.servery .chef {
+    font-size: small;
+}
 .time {
     font-size: x-large;
     font-weight: normal;
@@ -192,11 +196,11 @@ input[type="radio"] {
 
 .sticky {
     position: sticky;
+    display: block;
     top: 3rem;
     background-color: white;
     z-index: 3;
     text-align: center;
-    padding-top: 5px;
 }
 
 .stickyMargin {
