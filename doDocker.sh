@@ -5,7 +5,7 @@ while getopts cp: flag
 do
     case "${flag}" in
         c) clean=true;;
-        p) push=${OPTARGS};;
+        p) push=${OPTARG};;
     esac
 done
 #Open Docker, only if is not running
@@ -19,9 +19,10 @@ while (! docker stats --no-stream ); do
   sleep 1
 done
 fi
-if (! "$push" = false); then
+if (! test "$push" = false); then
+    echo "$push"
     git add .
-    git commit -m"$push"
+    git commit -m "$push"
     git push
 fi
 if ("$clean" = true); then 
