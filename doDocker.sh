@@ -25,6 +25,7 @@ if (! test "$push" = false); then
     git push
 fi
 if ("$clean" = true); then 
+    docker stop "$(docker ps -q)"
     docker rm "$(docker ps -a -q)"
     docker rmi $(docker images -q)
     docker build -t rs . --no-cache --pull
