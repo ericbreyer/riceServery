@@ -361,13 +361,11 @@ func main() {
 		}
 		jsonSlice := make([]serveryGroup, 0)
 		jsonSlice = append(jsonSlice, data...)
-		// for _, servery := range data {
-		// 	jsonSlice = append(jsonSlice, servery)
-		// }
+
 		w.Header().Set("Content-type", "application/json")
 		b, _ := json.Marshal(struct{ Jsons []serveryGroup }{Jsons: jsonSlice})
 		fmt.Fprintf(w, "%s", b)
-		fmt.Printf("%s", b)
+		// fmt.Printf("%s", b)
 	})
 
 	http.HandleFunc("/updateRating", func(w http.ResponseWriter, r *http.Request) {
@@ -394,6 +392,7 @@ func main() {
 		fmt.Fprintf(w, "All Good")
 	})
 
+	// this is for heroku
 	port := os.Getenv("PORT")
 
 	if port == "" {

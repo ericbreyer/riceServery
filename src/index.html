@@ -127,7 +127,7 @@
                 <div class="dayFlex">
                 <div class="day" v-for="day in time.MealDayGroups" v-if="(daysFilter == day.Name || daysFilter == 'All')">
                     <span><!--{{servery.Name.replaceAll("-"," ").toUpperCase()}}--> {{day.Name}} {{time.Name}}</span>
-                    <div class="closed" v-if="(day.Meals == null || day.Meals[0].Name == 'N/A')">
+                    <div class="closed" v-if="(day.Meals == null || (day.Meals[0].Name == 'N/A' && day.Meals.length == 1))">
                         Servery Closed :(
                     </div>
                     <ul>
