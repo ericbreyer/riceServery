@@ -343,7 +343,7 @@ func main() {
 	data := getAllServeryData()
 	addToJSON()
 
-	//update data every minute concurrently!
+	//update data every hour concurrently!
 	go func() {
 		c := time.Tick(time.Hour)
 		for range c {
@@ -359,15 +359,15 @@ func main() {
 		if r.Method != "GET" {
 			return
 		}
-		jsonSlice := make([]string, 0)
-		for _, servery := range data {
-			serveryJson, _ := json.Marshal(servery)
-			jsonSlice = append(jsonSlice, fmt.Sprintf("%s", serveryJson))
-		}
+		jsonSlice := make([]serveryGroup, 0)
+		jsonSlice = append(jsonSlice, data...)
+		// for _, servery := range data {
+		// 	jsonSlice = append(jsonSlice, servery)
+		// }
 		w.Header().Set("Content-type", "application/json")
-		b, _ := json.Marshal(struct{ Jsons []string }{Jsons: jsonSlice})
+		b, _ := json.Marshal(struct{ Jsons []serveryGroup }{Jsons: jsonSlice})
 		fmt.Fprintf(w, "%s", b)
-		//fmt.Printf("%s", b)
+		fmt.Printf("%s", b)
 	})
 
 	http.HandleFunc("/updateRating", func(w http.ResponseWriter, r *http.Request) {

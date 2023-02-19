@@ -116,17 +116,17 @@
         <div class="mainBody" ref="mainBody" v-bind:class="{big : !sidebarActive}">
         
         <div v-bind:class="[(daysFilter == 'All') ? 'serveryFlex' : 'serveryFlexRow']">
-        <!--<div class="servery" v-for="servery in text" v-if="(serveyFilter == JSON.parse(servery).Name || serveyFilter == 'All')">-->
-        <div class="servery" v-for="servery in text.sort(function(a,b) {return ((JSON.parse(a).Name.toUpperCase() > JSON.parse(b).Name.toUpperCase()) ? 1 : -1)})" v-if="serveryFilter.includes(JSON.parse(servery).Name) || serveryFilter.length == 0">
-            <span class="sticky"><span class="chef">{{JSON.parse(servery).Chef.Name}} presents</span><br>{{JSON.parse(servery).Name.replaceAll("-"," ").toUpperCase()}}</span>
+        <!--<div class="servery" v-for="servery in text" v-if="(serveyFilter == servery.Name || serveyFilter == 'All')">-->
+        <div class="servery" v-for="servery in text.sort(function(a,b) {return ((a.Name.toUpperCase() > b.Name.toUpperCase()) ? 1 : -1)})" v-if="serveryFilter.includes(servery.Name) || serveryFilter.length == 0">
+            <span class="sticky"><span class="chef">{{servery.Chef.Name}} presents</span><br>{{servery.Name.replaceAll("-"," ").toUpperCase()}}</span>
             <div class="timeFlex">
-            <div class="time" v-for="time in JSON.parse(servery).MealTimeGroups" v-if="(timeFilter == time.Name || timeFilter == 'All')">
+            <div class="time" v-for="time in servery.MealTimeGroups" v-if="(timeFilter == time.Name || timeFilter == 'All')">
                 
                 <!--<span class="stickyMargin" v-if="timeFilter == 'All'">{{time.Name}}</span>-->
                 
                 <div class="dayFlex">
                 <div class="day" v-for="day in time.MealDayGroups" v-if="(daysFilter == day.Name || daysFilter == 'All')">
-                    <span><!--{{JSON.parse(servery).Name.replaceAll("-"," ").toUpperCase()}}--> {{day.Name}} {{time.Name}}</span>
+                    <span><!--{{servery.Name.replaceAll("-"," ").toUpperCase()}}--> {{day.Name}} {{time.Name}}</span>
                     <div class="closed" v-if="(day.Meals == null || day.Meals[0].Name == 'N/A')">
                         Servery Closed :(
                     </div>

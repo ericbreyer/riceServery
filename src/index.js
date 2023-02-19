@@ -51,8 +51,8 @@ let appendChild = new Vue({
             this.text = text
             this.allFoods = []
             text.forEach(e1 => {
-                console.info(JSON.parse(e1))
-                JSON.parse(e1).MealTimeGroups.forEach(e2 => {
+                console.info(e1)
+                e1.MealTimeGroups.forEach(e2 => {
                     e2.MealDayGroups.forEach(e3 => {
                         if(e3.Meals == null) {
                             return
@@ -63,7 +63,7 @@ let appendChild = new Vue({
                                 "Day": e3.Name,
                                 "Time": e2.Name,
                                 "Alergies": e4.Alergies,
-                                "Servery": JSON.parse(e1).Name
+                                "Servery": e1.Name
                             })
                         })
                     })
@@ -77,8 +77,9 @@ let appendChild = new Vue({
             var text
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
-    
+                    console.log(this.response)
                     text = JSON.parse(this.response).Jsons
+                    console.log(text)
                 }
             };
             xhttp.open("GET", "/data", false);

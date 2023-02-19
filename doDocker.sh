@@ -20,7 +20,6 @@ while (! docker stats --no-stream ); do
 done
 fi
 if (! test "$push" = false); then
-    echo "$push"
     git add .
     git commit -m "$push"
     git push
