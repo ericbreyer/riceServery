@@ -284,8 +284,8 @@ func getServeryData(Servery string) (serveryGroup, error) {
 	currentMealDayBlock.MealTimeGroups = append(currentMealDayBlock.MealTimeGroups, currentMealTimeBlock)
 	data.MealDayGroups = append(data.MealDayGroups, currentMealDayBlock)
 
-	dataJson, _ := json.MarshalIndent(data, "", "  ")
-	fmt.Printf("%s", dataJson)
+	// dataJson, _ := json.MarshalIndent(data, "", "  ")
+	// fmt.Printf("%s", dataJson)
 
 	return data, nil
 }
