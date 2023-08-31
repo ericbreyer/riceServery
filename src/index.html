@@ -35,8 +35,8 @@
             <div class="optionsFlex">
                 <div>
                 <div>Filter Servery</div>
-                <div><input type="checkbox" id="baker-kitchen" value="baker-kitchen" v-model="serveryFilter">
-                <label for="baker-kitchen">Baker</label></div>
+                <div><input type="checkbox" id="baker-college-kitchen" value="baker-college-kitchen" v-model="serveryFilter">
+                <label for="baker-college-kitchen">Baker</label></div>
                 <div><input type="checkbox" id="north-servery" value="north-servery" v-model="serveryFilter">
                 <label for="north-servery">North</label></div>
                 <div><input type="checkbox" id="west-servery" value="west-servery" v-model="serveryFilter">
@@ -51,21 +51,21 @@
                 <div>Filter Time</div>
                 <select v-model="timeFilter">
                     <option>All</option>
-                    <option>Lunch</option>
-                    <option>Dinner</option>
+                    <option>LUNCH</option>
+                    <option>DINNER</option>
                 </select>
                 </div>
                 <div>
                 <div>Filter Days</div>
                 <select v-model="daysFilter">
                     <option>All</option>
-                    <option>Monday</option>
-                    <option>Tuesday</option>
-                    <option>Wednesday</option>
-                    <option>Thursday</option>
-                    <option>Friday</option>
-                    <option>Saturday</option>
-                    <option>Sunday</option>
+                    <option>MONDAY</option>
+                    <option>TUESDAY</option>
+                    <option>WEDNESDAY</option>
+                    <option>THURSDAY</option>
+                    <option>FRIDAY</option>
+                    <option>SATURDAY</option>
+                    <option>SUNDAY</option>
                 </select>
                 </div>
                 <!--
@@ -119,19 +119,20 @@
         <!--<div class="servery" v-for="servery in text" v-if="(serveyFilter == servery.Name || serveyFilter == 'All')">-->
         <div class="servery" v-for="servery in text.sort(function(a,b) {return ((a.Name.toUpperCase() > b.Name.toUpperCase()) ? 1 : -1)})" v-if="serveryFilter.includes(servery.Name) || serveryFilter.length == 0">
             <span class="sticky"><span class="chef">{{servery.Chef.Name}} presents</span><br>{{servery.Name.replaceAll("-"," ").toUpperCase()}}</span>
-            <div class="timeFlex">
-            <div class="time" v-for="time in servery.MealTimeGroups" v-if="(timeFilter == time.Name || timeFilter == 'All')">
                 
                 <!--<span class="stickyMargin" v-if="timeFilter == 'All'">{{time.Name}}</span>-->
                 
                 <div class="dayFlex">
-                <div class="day" v-for="day in time.MealDayGroups" v-if="(daysFilter == day.Name || daysFilter == 'All')">
+                <div class="day" v-for="day in servery.MealDayGroups" v-if="(daysFilter == day.Name || daysFilter == 'All')">
+                    <div class="timeFlex">
+                        <div class="time" v-for="time in day.MealTimeGroups" v-if="(timeFilter == time.Name || timeFilter == 'All')">
+                        
                     <span><!--{{servery.Name.replaceAll("-"," ").toUpperCase()}}--> {{day.Name}} {{time.Name}}</span>
-                    <div class="closed" v-if="(day.Meals == null || (day.Meals[0].Name == 'N/A' && day.Meals.length == 1))">
-                        Servery Closed :(
+                    <div class="closed" v-if="(time.Meals == null || (time.Meals[0].Name == 'N/A' && time.Meals.length == 1))">
+                        Servery Closed :( </br> (Or No Data From Chef {{servery.Chef.Name}})
                     </div>
                     <ul>
-                    <li class = "food" v-for="food in day.Meals" v-bind:class="{selected :  food.Name == toRate}"
+                    <li class = "food" v-for="food in time.Meals" v-bind:class="{selected :  food.Name == toRate}"
                                         v-on:click="function(e) {if(toRate == food.Name){toRate = ''; hidePopUp();}else{toRate = food.Name; movePopUp(e);}}">
                         <span v-if="food.Name != 'N/A'">{{food.Name}}<span class="allergy" v-for="allergy in food.Alergies"> {{allergy.Name}}</span></span>
                         <span class="starHolder"><span class="star" v-for="star in food.Rating">★</span></span>

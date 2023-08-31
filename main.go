@@ -36,21 +36,21 @@ type DataBlock struct {
 }
 
 type serveryGroup struct {
-	Name           string
-	MealTimeGroups []mealTimeGroup
-	Chef           chefName
+	Name          string
+	MealDayGroups []mealDayGroup
+	Chef          chefName
 }
 
 type chefName struct {
 	Name string
 }
 
-type mealTimeGroup struct {
-	Name          string
-	MealDayGroups []mealDayGroup
+type mealDayGroup struct {
+	Name           string
+	MealTimeGroups []mealTimeGroup
 }
 
-type mealDayGroup struct {
+type mealTimeGroup struct {
 	Name   string
 	Meals  []meal
 	Id     string
@@ -109,10 +109,10 @@ func getServeryData(Servery string) (serveryGroup, error) {
 	// fmt.Printf("%s", body0)
 
 	//url := fmt.Sprintf("https://websvc-aws.rice.edu:8443/static-files/dining-assets/%s-Menu-Full-Week.js", Servery)
-	url := fmt.Sprintf("https://staticws.b-cdn.net/dining/%s-menu-full-week-new.js", Servery)
+	url := fmt.Sprintf("https://dining.rice.edu/%s", Servery)
 	//url := fmt.Sprintf("https://web-api3.rice.edu/static/%s-menu-full-week-new.js", Servery)
 	req, _ := http.NewRequest("GET", url, nil)
-	req.Header.Add("Host", "staticws.b-cdn.net")
+	req.Header.Add("Host", "dining.rice.edu")
 	req.Header.Add("Accept", "	text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9")
 	req.Header.Add("Cl", "gzip, deflate, br")
 	req.Header.Add("accept-encoding", "gzip, deflate, br")
@@ -160,65 +160,70 @@ func getServeryData(Servery string) (serveryGroup, error) {
 
 	rawData := make([]DataBlock, 0)
 
-	chefRegex, _ := regexp.Compile(`<span class=\\"chef-name\\">[^<]*`)
+	chefRegex, _ := regexp.Compile(`<span class=\"views-field views-field-field-chef\"><span class=\"field-content\">[^<]*`)
 	chefMatched, _ := getMatchesWithIndex(body, chefRegex)
-	chef := chefName{Name: string(chefMatched[0][26:])}
+	if len(chefMatched) == 0 {
+		return serveryGroup{}, fmt.Errorf("bruh")
+	}
+	chef := chefName{Name: "Chef " + string(chefMatched[0][len("<span class=\"views-field views-field-field-chef\"><span class=\"field-content\">"):])}
 
-	timeRegex, _ := regexp.Compile(`<span class=\\"meal-time[^>]*>[^<]*`)
+	timeRegex, _ := regexp.Compile(`<div class=\"grid-mw--1380 tac\">((<h4 class=\"date\"><\/h4>)|(<h4 class=\"static-date\">[^<]*<\/h4>))?\n?<h2>[^<]*`)
 	timeMatched, timeMatchedIdx := getMatchesWithIndex(body, timeRegex)
+
 	for idx, slice := range timeMatched {
 
-		temp, _ := regexp.Compile(`Lunch|Dinner`)
+		temp, _ := regexp.Compile(`LUNCH|DINNER`)
 		matched := temp.Find(slice)
+
 		if matched == nil {
 			fmt.Printf("%s", slice)
 			continue
 		}
+		local_idx := temp.FindIndex(slice)[0]
 
 		rawData = append(rawData, DataBlock{
 			DataType: mealTime,
 			Text:     string(matched),
-			Position: timeMatchedIdx[idx][0]})
+			Position: timeMatchedIdx[idx][0] + local_idx})
 	}
 
-	foodsRegex, _ := regexp.Compile(`<div class=\\"mitem\\">[^<]*`)
+	foodsRegex, _ := regexp.Compile(`<div class=\"mname\">[^<]*`)
 	foodsMatched, foodsMatchedIdx := getMatchesWithIndex(body, foodsRegex)
 
 	for idx, slice := range foodsMatched {
-
 		rawData = append(rawData, DataBlock{
 			DataType: food,
-			Text:     strings.TrimSpace(fmt.Sprintf("%s", slice[21:])),
+			Text:     strings.TrimSpace(string(slice[len("<div class=\"mname\">"):])),
 			Position: foodsMatchedIdx[idx][0]})
 	}
 
-	allergiesRegex, _ := regexp.Compile(`<div class=\\"icons icon-only icons-([^\\]*)`)
+	allergiesRegex, _ := regexp.Compile(`<div class=\"icons icon-only [^\"]*`)
 	allergiesMatched, allergiesMatchedIdx := getMatchesWithIndex(body, allergiesRegex)
 
 	for idx, slice := range allergiesMatched {
-
 		rawData = append(rawData, DataBlock{
 			DataType: allergtre,
-			Text:     strings.TrimSpace(fmt.Sprintf("%s", slice[35:])),
+			Text:     strings.TrimSpace(string(slice[len("<div class=\"icons icon-only "):])),
 			Position: allergiesMatchedIdx[idx][0]})
 	}
 
-	dayTimeRegex, _ := regexp.Compile(`background:#212d64;\\">[^<]*`)
+	dayTimeRegex, _ := regexp.Compile(`<div class=\"grid-mw--1380 tac\"><h4 class=\"static-date\">[^<]*`)
 	dayTimeMatched, dayTimeMatchedIdx := getMatchesWithIndex(body, dayTimeRegex)
 
 	for idx, slice := range dayTimeMatched {
 
-		temp, _ := regexp.Compile(`Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday`)
+		temp, _ := regexp.Compile(`MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|SATURDAY|SUNDAY`)
 		matched := temp.Find(slice)
 		if matched == nil {
 			fmt.Printf("%s", slice)
 			continue
 		}
+		local_idx := temp.FindIndex(slice)[0]
 
 		rawData = append(rawData, DataBlock{
 			DataType: day,
-			Text:     fmt.Sprintf("%s", matched),
-			Position: dayTimeMatchedIdx[idx][0]})
+			Text:     string(matched),
+			Position: dayTimeMatchedIdx[idx][0] + local_idx})
 	}
 
 	sort.Slice(rawData, func(i, j int) bool {
@@ -230,28 +235,35 @@ func getServeryData(Servery string) (serveryGroup, error) {
 	var currentMealDayBlock mealDayGroup
 	var currentFoodBlock meal
 	for _, block := range rawData {
+		if len(currentMealDayBlock.Name) == 0 && block.DataType != day {
+			//wait till the first day
+			continue
+		}
+		if block.DataType != allergtre && block.DataType != food {
+			fmt.Println(block.Text)
+		}
 		switch block.DataType {
+
 		case servery:
 			continue
-		case mealTime:
-			if currentMealTimeBlock.Name != "" {
-				currentMealTimeBlock.MealDayGroups = append(currentMealTimeBlock.MealDayGroups, currentMealDayBlock)
-				currentMealDayBlock = mealDayGroup{}
-				data.MealTimeGroups = append(data.MealTimeGroups, currentMealTimeBlock)
-			}
-			currentMealTimeBlock = mealTimeGroup{Name: block.Text}
 		case day:
 			if currentMealDayBlock.Name != "" {
-				currentMealDayBlock.Meals = append(currentMealDayBlock.Meals, currentFoodBlock)
-				currentFoodBlock = meal{}
-				currentMealTimeBlock.MealDayGroups = append(currentMealTimeBlock.MealDayGroups, currentMealDayBlock)
+				currentMealDayBlock.MealTimeGroups = append(currentMealDayBlock.MealTimeGroups, currentMealTimeBlock)
+				currentMealTimeBlock = mealTimeGroup{}
+				data.MealDayGroups = append(data.MealDayGroups, currentMealDayBlock)
 			}
-
+			currentMealDayBlock = mealDayGroup{Name: block.Text}
+		case mealTime:
+			if currentMealTimeBlock.Name != "" {
+				currentMealTimeBlock.Meals = append(currentMealTimeBlock.Meals, currentFoodBlock)
+				currentFoodBlock = meal{Name: "N/A"}
+				currentMealDayBlock.MealTimeGroups = append(currentMealDayBlock.MealTimeGroups, currentMealTimeBlock)
+			}
 			year, week := time.Now().ISOWeek()
-			currentMealDayBlock = mealDayGroup{Name: block.Text, Id: fmt.Sprintf("%d%s%d/%d", block.Position, Servery, week, year)}
+			currentMealTimeBlock = mealTimeGroup{Name: block.Text, Id: fmt.Sprintf("%d%s%d/%d", block.Position, Servery, week, year)}
 		case food:
 			if currentFoodBlock.Name != "" {
-				currentMealDayBlock.Meals = append(currentMealDayBlock.Meals, currentFoodBlock)
+				currentMealTimeBlock.Meals = append(currentMealTimeBlock.Meals, currentFoodBlock)
 			}
 			rating := 0
 
@@ -260,18 +272,20 @@ func getServeryData(Servery string) (serveryGroup, error) {
 			}
 
 			if block.Text != "CLOSED" && block.Text != "Closed" {
+				block.Text = strings.Replace(block.Text, "&amp;", "&", -1)
+				block.Text = strings.Replace(block.Text, "&#039;", "'", -1)
 				currentFoodBlock = meal{Name: block.Text, Rating: rating}
 			}
 		case allergtre:
 			currentFoodBlock.Alergies = append(currentFoodBlock.Alergies, alergyToID[block.Text])
 		}
 	}
-	currentMealDayBlock.Meals = append(currentMealDayBlock.Meals, currentFoodBlock)
-	currentMealTimeBlock.MealDayGroups = append(currentMealTimeBlock.MealDayGroups, currentMealDayBlock)
-	data.MealTimeGroups = append(data.MealTimeGroups, currentMealTimeBlock)
+	currentMealTimeBlock.Meals = append(currentMealTimeBlock.Meals, currentFoodBlock)
+	currentMealDayBlock.MealTimeGroups = append(currentMealDayBlock.MealTimeGroups, currentMealTimeBlock)
+	data.MealDayGroups = append(data.MealDayGroups, currentMealDayBlock)
 
-	// dataJson, _ := json.MarshalIndent(data, "", "  ")
-	// fmt.Printf("%s", dataJson)
+	dataJson, _ := json.MarshalIndent(data, "", "  ")
+	fmt.Printf("%s", dataJson)
 
 	return data, nil
 }
@@ -279,7 +293,7 @@ func getServeryData(Servery string) (serveryGroup, error) {
 func getAllServeryData() []serveryGroup {
 	fmt.Print("Data Update Tick! at: ", time.Now(), "\n")
 
-	serveries := []string{"baker-kitchen", "north-servery", "west-servery", "south-servery", "seibel-servery"}
+	serveries := []string{"baker-college-kitchen", "north-servery", "west-servery", "seibel-servery", "south-servery"}
 
 	data := make([]serveryGroup, 0)
 
@@ -288,13 +302,14 @@ func getAllServeryData() []serveryGroup {
 	for _, servery := range serveries {
 		//concurrency is about twice as fast and its cool!
 		go func(v string) {
+			defer w.Done()
 			serveryData, err := getServeryData(v)
 			for err != nil {
 				println("\n----\nahh\n----\n", err)
-				serveryData, err = getServeryData(v)
+				return
 			}
 			data = append(data, serveryData)
-			w.Done()
+
 		}(servery)
 	}
 

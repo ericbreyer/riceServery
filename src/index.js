@@ -16,34 +16,34 @@ let appendChild = new Vue({
             today = new Date()
             switch ((today.getDay() + offset) % 7) {
                 case 0:
-                    this.daysFilter = "Sunday"
+                    this.daysFilter = "SUNDAY"
                     break
                 case 1:
-                    this.daysFilter = "Monday"
+                    this.daysFilter = "MONDAY"
                     break
                 case 2:
-                    this.daysFilter = "Tuesday"
+                    this.daysFilter = "TUESDAY"
                     break
                 case 3:
-                    this.daysFilter = "Wednesday"
+                    this.daysFilter = "WEDNESDAY"
                     break
                 case 4:
-                    this.daysFilter = "Thursday"
+                    this.daysFilter = "THURSDAY"
                     break
                 case 5:
-                    this.daysFilter = "Friday"
+                    this.daysFilter = "FRIDAY"
                     break
                 case 6:
-                    this.daysFilter = "Saturday"
+                    this.daysFilter = "SATURDAY"
                     break
             }
         },
         currentTime: function() {
             if (today.getHours() >= 14) {
-                this.timeFilter = "Dinner"
+                this.timeFilter = "DINNER"
             }
             else {
-                this.timeFilter = "Lunch"
+                this.timeFilter = "LUNCH"
             }
         },
         changeText: function(text) {
@@ -52,16 +52,16 @@ let appendChild = new Vue({
             this.allFoods = []
             text.forEach(e1 => {
                 console.info(e1)
-                e1.MealTimeGroups.forEach(e2 => {
-                    e2.MealDayGroups.forEach(e3 => {
+                e1.MealDayGroups.forEach(e2 => {
+                    e2.MealTimeGroups.forEach(e3 => {
                         if(e3.Meals == null) {
                             return
                         }
                         e3.Meals.forEach(e4 => {
                             this.allFoods.push({
                                 "Name": e4.Name,
-                                "Day": e3.Name,
-                                "Time": e2.Name,
+                                "Day": e2.Name,
+                                "Time": e3.Name,
                                 "Alergies": e4.Alergies,
                                 "Servery": e1.Name
                             })

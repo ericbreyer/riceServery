@@ -42,10 +42,6 @@ body {
     background-color: darkgrey;
 }
 
-.popUp button:active {
-
-}
-
 #stars {
     font-size: .8em;
     color: gold;
@@ -70,12 +66,12 @@ body {
 .servery .chef {
     font-size: small;
 }
-.time {
+.day {
     font-size: x-large;
     font-weight: normal;
     padding: 0.5rem 0;
 }
-.day {
+.time {
     font-size: medium;
     font-weight: bold;
     border: black 1px solid;
@@ -90,7 +86,7 @@ body {
 
 }
 
-.day > span:first-child {
+.time > span:first-child {
     background-color: var(--my-blue);
     width: 100%;
     padding: .2em 0 .2em 0;
@@ -101,7 +97,7 @@ body {
     z-index: 1;
 }
 
-.day > ul > li:last-child {
+.time > ul > li:last-child {
     border-radius: 0px 0px 5px 5px;
 }
 
@@ -168,12 +164,12 @@ ul {
     justify-content: center;
 }
 
-.timeFlex {
+.dayFlex {
     display: flex;
     flex-direction: column;
 }
 
-.dayFlex {
+.timeFlex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -184,7 +180,8 @@ ul {
 
 .closed {
     height: 9em;
-    line-height: 9em;
+    padding-top: 2.5em;
+    line-height: 2em;
     color: red;
     text-align: center;
     z-index: 1;
