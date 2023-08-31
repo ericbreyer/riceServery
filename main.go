@@ -239,15 +239,17 @@ func getServeryData(Servery string) (serveryGroup, error) {
 			//wait till the first day
 			continue
 		}
-		if block.DataType != allergtre {
-			fmt.Println(block.Text)
-		}
+		// if block.DataType != allergtre {
+		// 	fmt.Println(block.Text)
+		// }
 		switch block.DataType {
 
 		case servery:
 			continue
 		case day:
 			if currentMealDayBlock.Name != "" {
+				currentMealTimeBlock.Meals = append(currentMealTimeBlock.Meals, currentFoodBlock)
+				currentFoodBlock = meal{Name: "N/A"}
 				currentMealDayBlock.MealTimeGroups = append(currentMealDayBlock.MealTimeGroups, currentMealTimeBlock)
 				currentMealTimeBlock = mealTimeGroup{}
 				data.MealDayGroups = append(data.MealDayGroups, currentMealDayBlock)
@@ -262,7 +264,10 @@ func getServeryData(Servery string) (serveryGroup, error) {
 			year, week := time.Now().ISOWeek()
 			currentMealTimeBlock = mealTimeGroup{Name: block.Text, Id: fmt.Sprintf("%d%s%d/%d", block.Position, Servery, week, year)}
 		case food:
-			if currentFoodBlock.Name != "" {
+			if currentFoodBlock.Name != "N/A" {
+				fmt.Println(currentMealDayBlock.Name)
+				fmt.Println(currentMealTimeBlock.Name)
+				fmt.Println(currentFoodBlock)
 				currentMealTimeBlock.Meals = append(currentMealTimeBlock.Meals, currentFoodBlock)
 			}
 			rating := 0
@@ -293,7 +298,7 @@ func getServeryData(Servery string) (serveryGroup, error) {
 func getAllServeryData() []serveryGroup {
 	fmt.Print("Data Update Tick! at: ", time.Now(), "\n")
 
-	serveries := []string{"baker-college-kitchen", "north-servery", "west-servery", "seibel-servery", "south-servery"}
+	serveries := []string{"baker-college-kitchen" /*, "north-servery", "west-servery", "seibel-servery", "south-servery"*/}
 
 	data := make([]serveryGroup, 0)
 
