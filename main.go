@@ -239,7 +239,7 @@ func getServeryData(Servery string) (serveryGroup, error) {
 			//wait till the first day
 			continue
 		}
-		if block.DataType != allergtre && block.DataType != food {
+		if block.DataType != allergtre {
 			fmt.Println(block.Text)
 		}
 		switch block.DataType {
